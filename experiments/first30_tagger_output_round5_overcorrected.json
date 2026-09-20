@@ -1,0 +1,1010 @@
+{
+  "white_nights_first_night_001": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "doubts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "youthful night",
+        "despondency",
+        "loneliness",
+        "Petersburg"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "youthful night",
+        "despondency",
+        "fear of abandonment"
+      ]
+    }
+  },
+  "white_nights_first_night_002": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "intimate observation",
+        "imagined friendships",
+        "personification of buildings"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "attachment to familiar faces",
+        "personification of houses",
+        "imagined friendships"
+      ]
+    }
+  },
+  "white_nights_first_night_003": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-city"
+      ],
+      "local_motifs": [
+        "disfigured house",
+        "emotional connection to buildings",
+        "personification of architecture"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-city"
+      ],
+      "local_motifs": [
+        "personification of houses",
+        "attachment to familiar sights",
+        "emotional discomfort",
+        "fear of change"
+      ]
+    }
+  },
+  "white_nights_first_night_004": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "doubts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "grimy green walls",
+        "spider's web",
+        "furniture arrangement",
+        "summer villas"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "grimy green walls",
+        "spider's web",
+        "furniture arrangement",
+        "sense of abandonment"
+      ]
+    }
+  },
+  "white_nights_first_night_005": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing",
+        "the-city"
+      ],
+      "local_motifs": [
+        "summer villas",
+        "transformation of passers-by",
+        "flowers for the journey"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "sense of abandonment",
+        "attachment to the city",
+        "perception of passers-by"
+      ]
+    }
+  },
+  "white_nights_first_night_006": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation",
+        "alienation-from-society"
+      ],
+      "local_motifs": [
+        "summer villas",
+        "waggoners",
+        "friendly looks",
+        "burden falling off"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "feeling forgotten",
+        "longing to belong",
+        "imagined connection with passers-by"
+      ]
+    }
+  },
+  "white_nights_first_night_007": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "ephemeral-connection",
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "nature's beauty",
+        "momentary joy",
+        "fleeting distraction"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "nature's beauty",
+        "compassion for frailty",
+        "fleeting moments of joy"
+      ]
+    }
+  },
+  "white_nights_first_night_008": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "momentary beauty",
+        "fleeting distraction",
+        "solitary joy"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "fleeting beauty",
+        "timid movements",
+        "mortal anguish",
+        "unexpected adventure"
+      ]
+    }
+  },
+  "white_nights_first_night_009": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid movements",
+        "captured bird",
+        "unknown lady"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "doubts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "timid hesitation",
+        "unexpected danger",
+        "protective instinct"
+      ]
+    }
+  },
+  "white_nights_first_night_010": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl",
+        "the obtrusive gentleman"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "charming and dark",
+        "trembling with excitement",
+        "gleam of a smile"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl",
+        "the obtrusive gentleman"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "protective action",
+        "trembling with excitement",
+        "glimmer of a smile"
+      ]
+    }
+  },
+  "white_nights_first_night_011": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timidity",
+        "dreams of romance",
+        "solitude"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "isolation",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "shyness",
+        "timidity",
+        "delight in conversation"
+      ]
+    }
+  },
+  "white_nights_first_night_012": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "unrequited-longing",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "timidity",
+        "idealized love",
+        "romantic fantasies"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "idealized love",
+        "romantic fantasies",
+        "timidity"
+      ]
+    }
+  },
+  "white_nights_first_night_013": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "solitude"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "encouragement"
+      ]
+    }
+  },
+  "white_nights_first_night_014": {
+    "local": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "brotherly compassion",
+        "happy moments",
+        "dreaming of you"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "brotherly compassion",
+        "happy moments",
+        "fear of rejection"
+      ]
+    }
+  },
+  "white_nights_first_night_015": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "dreaming of her",
+        "rare moments",
+        "memories in Petersburg"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "the girl"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "dreaming of her",
+        "places in Petersburg",
+        "memories"
+      ]
+    }
+  },
+  "white_nights_first_night_016": {
+    "local": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "friendship",
+        "secrecy",
+        "conditions of affection"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "conditional friendship",
+        "fear of love",
+        "shared loneliness"
+      ]
+    }
+  },
+  "white_nights_first_night_017": {
+    "local": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "trust",
+        "friendship",
+        "anticipation",
+        "romance"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "trust",
+        "anticipation of confession",
+        "sense of miracle"
+      ]
+    }
+  },
+  "white_nights_first_night_018": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "happy",
+        "reconciled with myself",
+        "anticipation of tomorrow"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "moment of happiness",
+        "anticipation of connection",
+        "self-reconciliation"
+      ]
+    }
+  },
+  "white_nights_second_night_001": {
+    "local": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "isolation"
+      ],
+      "local_motifs": [
+        "soft heart",
+        "self-analysis",
+        "need for connection"
+      ]
+    },
+    "context": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "doubt and reflection",
+        "desire for understanding",
+        "soft heart"
+      ]
+    }
+  },
+  "white_nights_second_night_002": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "utterly alone",
+        "keeping myself to myself",
+        "no one to talk to"
+      ]
+    },
+    "context": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "emotional turmoil",
+        "need for connection",
+        "playful conversation"
+      ]
+    }
+  },
+  "white_nights_second_night_003": {
+    "local": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "childish laughter",
+        "dreaming",
+        "self-description"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "childish laughter",
+        "dreaming of a Chinese Prince",
+        "conversation about types"
+      ]
+    }
+  },
+  "white_nights_second_night_004": {
+    "local": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "marrying a Chinese Prince",
+        "dreaming",
+        "happiness in simplicity"
+      ]
+    },
+    "context": {
+      "speaker": "Nastenka",
+      "characters_present": [
+        "the Dreamer"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "dreaming of a Chinese Prince",
+        "strange nooks in Petersburg",
+        "different light on everything"
+      ]
+    }
+  },
+  "white_nights_second_night_005": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "the-dreamer",
+        "isolation"
+      ],
+      "local_motifs": [
+        "corners of Petersburg",
+        "dreamers",
+        "inaccessible corners",
+        "embarrassment in conversation"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "isolation"
+      ],
+      "local_motifs": [
+        "dreamers' corners",
+        "embarrassment in social interactions",
+        "fantasy vs. prosaic life"
+      ]
+    }
+  },
+  "white_nights_second_night_006": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation",
+        "self-deception",
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "awkward conversation",
+        "confusion in friendship",
+        "fear of connection"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "awkward conversation",
+        "confusion in social interactions",
+        "failed connection"
+      ]
+    }
+  },
+  "white_nights_second_night_007": {
+    "local": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "absurd questions",
+        "queer creature",
+        "unhappy kitten"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [],
+      "local_motifs": [
+        "friendship",
+        "social awkwardness",
+        "imagination"
+      ]
+    }
+  },
+  "white_nights_second_night_008": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "self-glorification",
+        "flow of words",
+        "long separation"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "unexpected visit",
+        "weight of hospitality",
+        "flow of words",
+        "long separation"
+      ]
+    }
+  },
+  "white_nights_second_night_009": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "evening glow",
+        "Petersburg sky",
+        "joyful emotion",
+        "weak nerves"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [],
+      "local_motifs": [
+        "evening glow",
+        "release from work",
+        "joyful emotion"
+      ]
+    }
+  },
+  "white_nights_second_night_010": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "joyful emotion",
+        "fading sunset",
+        "fantasy",
+        "meditative smile"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "joyful emotion",
+        "fading sunset",
+        "Goddess of Fancy",
+        "meditative smile"
+      ]
+    }
+  },
+  "white_nights_second_night_011": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "isolation"
+      ],
+      "local_motifs": [
+        "playful flight of fancy",
+        "sad and empty soul",
+        "imagination fostered by solitude"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "meditative smile",
+        "fleeting fantasies",
+        "emptiness after dining",
+        "solitude and idleness"
+      ]
+    }
+  },
+  "white_nights_second_night_012": {
+    "local": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "imagination and solitude",
+        "fantasy vs. reality",
+        "the artist of his own life"
+      ]
+    },
+    "context": {
+      "speaker": "the Dreamer",
+      "characters_present": [
+        "Nastenka",
+        "Matrona"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "the-dreamer",
+        "self-deception"
+      ],
+      "local_motifs": [
+        "imagination and solitude",
+        "fascinating life",
+        "corrupted eyes"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The model is likely missing the correct "speaking_voice" tag because the prompt's instruction to "scan the WHOLE passage, start to end, for every quoted line attributed to Nastenka" might not be sufficiently emphasized or clear in its importance. The passage contains a long monologue by the Dreamer, which may lead the model to overlook Nastenka's substantive contributions. The instruction to consider any real line from Nastenka, regardless of length, needs to be more prominent to ensure it is not overshadowed by the Dreamer's longer speech.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "PROCEDURE: scan the WHOLE passage, start to end, for every quoted line attributed to Nastenka."
+new: "IMPORTANT PROCEDURE: Thoroughly scan the WHOLE passage, start to end, for every quoted line attributed to Nastenka, regardless of the Dreamer's longer speeches."
+
+REGRESSION RISK:
+There is a minor risk that emphasizing this procedure might lead to over-attribution of "the Dreamer and Nastenka" in passages where her contributions are indeed minimal or non-substantive, but this is mitigated by the existing criteria for what constitutes a substantive line.

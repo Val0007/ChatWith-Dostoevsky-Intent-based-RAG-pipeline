@@ -1,0 +1,915 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "factual",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_second_night_016",
+            "white_nights_fourth_night_015",
+            "white_nights_second_night_009",
+            "white_nights_third_night_008",
+            "white_nights_second_night_023",
+            "white_nights_third_night_004"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_006",
+            "white_nights_third_night_004",
+            "white_nights_second_night_034",
+            "white_nights_third_night_002",
+            "white_nights_second_night_005",
+            "white_nights_fourth_night_015"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_fourth_night_015",
+            "white_nights_third_night_004",
+            "white_nights_second_night_034",
+            "white_nights_second_night_007",
+            "white_nights_second_night_008",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_037",
+            "white_nights_fourth_night_015",
+            "white_nights_second_night_007",
+            "white_nights_second_night_008",
+            "white_nights_second_night_016",
+            "white_nights_second_night_006"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_fourth_night_015",
+            "white_nights_third_night_004",
+            "white_nights_second_night_037",
+            "white_nights_second_night_007",
+            "white_nights_second_night_008",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_fourth_night_015",
+            "white_nights_third_night_004",
+            "white_nights_second_night_037",
+            "white_nights_second_night_007",
+            "white_nights_second_night_008",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_fourth_night_015",
+            "white_nights_third_night_004",
+            "white_nights_second_night_037",
+            "white_nights_second_night_007",
+            "white_nights_second_night_008",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "character",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_second_night_009",
+            "white_nights_second_night_010",
+            "white_nights_second_night_016",
+            "white_nights_second_night_005",
+            "white_nights_second_night_020",
+            "white_nights_second_night_021"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_008",
+            "white_nights_second_night_014",
+            "white_nights_second_night_020",
+            "white_nights_second_night_019",
+            "white_nights_second_night_004",
+            "white_nights_second_night_013"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_020",
+            "white_nights_second_night_010",
+            "white_nights_second_night_008",
+            "white_nights_second_night_004",
+            "white_nights_second_night_019",
+            "white_nights_second_night_005"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_013",
+            "white_nights_second_night_012",
+            "white_nights_second_night_020",
+            "white_nights_second_night_005",
+            "white_nights_second_night_009",
+            "white_nights_second_night_017"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_second_night_018",
+            "white_nights_first_night_007",
+            "white_nights_second_night_005",
+            "white_nights_second_night_019",
+            "white_nights_second_night_021",
+            "white_nights_second_night_020"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_second_night_018",
+            "white_nights_first_night_007",
+            "white_nights_second_night_005",
+            "white_nights_second_night_019",
+            "white_nights_second_night_021",
+            "white_nights_second_night_010"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_second_night_018",
+            "white_nights_first_night_007",
+            "white_nights_second_night_005",
+            "white_nights_second_night_019",
+            "white_nights_second_night_021",
+            "white_nights_second_night_010"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "motivation",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_032",
+            "white_nights_third_night_008",
+            "white_nights_fourth_night_006",
+            "white_nights_second_night_034",
+            "white_nights_fourth_night_011"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_first_night_016",
+            "white_nights_second_night_034",
+            "white_nights_second_night_032",
+            "white_nights_second_night_033",
+            "white_nights_first_night_012",
+            "white_nights_second_night_007"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_032",
+            "white_nights_second_night_034",
+            "white_nights_second_night_033",
+            "white_nights_fourth_night_003",
+            "white_nights_third_night_002",
+            "white_nights_third_night_004"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_037",
+            "white_nights_fourth_night_006",
+            "white_nights_second_night_032",
+            "white_nights_fourth_night_003",
+            "white_nights_third_night_008",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_fourth_night_009",
+            "white_nights_fourth_night_011",
+            "white_nights_fourth_night_006",
+            "white_nights_second_night_036",
+            "white_nights_fourth_night_004",
+            "white_nights_third_night_002"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_fourth_night_009",
+            "white_nights_fourth_night_006",
+            "white_nights_fourth_night_011",
+            "white_nights_fourth_night_004",
+            "white_nights_third_night_002",
+            "white_nights_first_night_016"
+          ],
+          "hit": true,
+          "rank": 6
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_fourth_night_009",
+            "white_nights_fourth_night_011",
+            "white_nights_fourth_night_006",
+            "white_nights_first_night_016",
+            "white_nights_fourth_night_004",
+            "white_nights_third_night_002"
+          ],
+          "hit": true,
+          "rank": 4
+        }
+      }
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "factual",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_second_night_025",
+            "white_nights_second_night_024",
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_026",
+            "white_nights_second_night_032",
+            "white_nights_second_night_023"
+          ],
+          "hit": true,
+          "rank": 5
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_032",
+            "white_nights_second_night_031",
+            "white_nights_second_night_025",
+            "white_nights_second_night_024",
+            "white_nights_second_night_026",
+            "white_nights_second_night_036"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_025",
+            "white_nights_second_night_032",
+            "white_nights_second_night_024",
+            "white_nights_second_night_026",
+            "white_nights_second_night_033",
+            "white_nights_second_night_029"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_032",
+            "white_nights_second_night_026",
+            "white_nights_second_night_029",
+            "white_nights_second_night_028",
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_025"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_second_night_026",
+            "white_nights_second_night_033",
+            "white_nights_second_night_034",
+            "white_nights_second_night_025",
+            "white_nights_second_night_029",
+            "white_nights_second_night_032"
+          ],
+          "hit": true,
+          "rank": 6
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_second_night_026",
+            "white_nights_second_night_033",
+            "white_nights_second_night_025",
+            "white_nights_second_night_029",
+            "white_nights_second_night_032",
+            "white_nights_second_night_028"
+          ],
+          "hit": true,
+          "rank": 5
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_second_night_033",
+            "white_nights_second_night_034",
+            "white_nights_second_night_025",
+            "white_nights_second_night_026",
+            "white_nights_second_night_029",
+            "white_nights_second_night_032"
+          ],
+          "hit": true,
+          "rank": 6
+        }
+      }
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "interpretive",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_second_night_012",
+            "white_nights_second_night_014",
+            "white_nights_second_night_013",
+            "white_nights_second_night_019",
+            "white_nights_second_night_005",
+            "white_nights_second_night_011"
+          ],
+          "hit": true,
+          "rank": 3
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_013",
+            "white_nights_second_night_005",
+            "white_nights_second_night_019",
+            "white_nights_third_night_002",
+            "white_nights_second_night_012"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_013",
+            "white_nights_second_night_012",
+            "white_nights_second_night_005",
+            "white_nights_second_night_019",
+            "white_nights_second_night_020"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_013",
+            "white_nights_second_night_005",
+            "white_nights_second_night_020",
+            "white_nights_second_night_008",
+            "white_nights_second_night_004",
+            "white_nights_second_night_003"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_020",
+            "white_nights_third_night_002",
+            "white_nights_second_night_019",
+            "white_nights_second_night_015",
+            "white_nights_second_night_005"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_020",
+            "white_nights_third_night_002",
+            "white_nights_second_night_019",
+            "white_nights_second_night_015",
+            "white_nights_second_night_005"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_020",
+            "white_nights_third_night_002",
+            "white_nights_second_night_019",
+            "white_nights_second_night_015",
+            "white_nights_second_night_005"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "evaluation",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_025",
+            "white_nights_second_night_024",
+            "white_nights_second_night_009",
+            "white_nights_second_night_007",
+            "white_nights_second_night_034"
+          ],
+          "hit": true,
+          "rank": 6
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_034",
+            "white_nights_second_night_036",
+            "white_nights_fourth_night_002",
+            "white_nights_second_night_014",
+            "white_nights_second_night_007",
+            "white_nights_second_night_005"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_034",
+            "white_nights_second_night_007",
+            "white_nights_second_night_009",
+            "white_nights_second_night_025",
+            "white_nights_second_night_032",
+            "white_nights_second_night_005"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_032",
+            "white_nights_fourth_night_003",
+            "white_nights_fourth_night_002",
+            "white_nights_second_night_026",
+            "white_nights_fourth_night_013"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_034",
+            "white_nights_fourth_night_002",
+            "white_nights_fourth_night_004",
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_032"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_034",
+            "white_nights_fourth_night_004",
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_032",
+            "white_nights_second_night_026"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_034",
+            "white_nights_fourth_night_004",
+            "white_nights_fourth_night_012",
+            "white_nights_second_night_032",
+            "white_nights_second_night_026"
+          ],
+          "hit": true,
+          "rank": 2
+        }
+      }
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "comparative",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_second_night_025",
+            "white_nights_second_night_016",
+            "white_nights_third_night_004",
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_009"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_021",
+            "white_nights_third_night_008",
+            "white_nights_third_night_004",
+            "white_nights_second_night_024",
+            "white_nights_second_night_007",
+            "white_nights_second_night_036"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_third_night_004",
+            "white_nights_second_night_024",
+            "white_nights_third_night_002",
+            "white_nights_second_night_021",
+            "white_nights_second_night_015"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_second_night_024",
+            "white_nights_second_night_025",
+            "white_nights_second_night_026",
+            "white_nights_third_night_003",
+            "white_nights_third_night_002"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_third_night_002",
+            "white_nights_fourth_night_002",
+            "white_nights_third_night_003",
+            "white_nights_fourth_night_003",
+            "white_nights_third_night_004"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_third_night_002",
+            "white_nights_fourth_night_002",
+            "white_nights_third_night_003",
+            "white_nights_fourth_night_003",
+            "white_nights_third_night_004"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_third_night_008",
+            "white_nights_third_night_002",
+            "white_nights_fourth_night_002",
+            "white_nights_third_night_003",
+            "white_nights_fourth_night_003",
+            "white_nights_third_night_004"
+          ],
+          "hit": true,
+          "rank": 1
+        }
+      }
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "evaluation",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_fourth_night_011",
+            "white_nights_third_night_002",
+            "white_nights_second_night_033",
+            "white_nights_second_night_009",
+            "white_nights_second_night_010",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_third_night_009",
+            "white_nights_second_night_004",
+            "white_nights_third_night_008",
+            "white_nights_second_night_009",
+            "white_nights_second_night_032",
+            "white_nights_second_night_017"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_009",
+            "white_nights_second_night_032",
+            "white_nights_second_night_033",
+            "white_nights_second_night_017",
+            "white_nights_third_night_008",
+            "white_nights_third_night_002"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_032",
+            "white_nights_third_night_002",
+            "white_nights_morning_004",
+            "white_nights_third_night_009",
+            "white_nights_second_night_004",
+            "white_nights_second_night_016"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_fourth_night_011",
+            "white_nights_morning_004",
+            "white_nights_second_night_017",
+            "white_nights_fourth_night_014"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_fourth_night_011",
+            "white_nights_morning_004",
+            "white_nights_second_night_017",
+            "white_nights_fourth_night_014"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_fourth_night_011",
+            "white_nights_morning_004",
+            "white_nights_second_night_017",
+            "white_nights_fourth_night_014"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "comparative",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_second_night_010",
+            "white_nights_second_night_013",
+            "white_nights_second_night_009",
+            "white_nights_second_night_014",
+            "white_nights_second_night_005",
+            "white_nights_second_night_020"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_006",
+            "white_nights_second_night_027",
+            "white_nights_second_night_012",
+            "white_nights_third_night_009",
+            "white_nights_second_night_015"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_014",
+            "white_nights_second_night_013",
+            "white_nights_second_night_010",
+            "white_nights_second_night_012",
+            "white_nights_second_night_016",
+            "white_nights_second_night_005"
+          ],
+          "hit": true,
+          "rank": 2
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_013",
+            "white_nights_second_night_012",
+            "white_nights_morning_004",
+            "white_nights_second_night_006",
+            "white_nights_second_night_016",
+            "white_nights_second_night_005"
+          ],
+          "hit": true,
+          "rank": 1
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_second_night_020",
+            "white_nights_second_night_019",
+            "white_nights_third_night_009",
+            "white_nights_second_night_010"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_second_night_019",
+            "white_nights_second_night_015",
+            "white_nights_fourth_night_014",
+            "white_nights_morning_004"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_third_night_002",
+            "white_nights_second_night_018",
+            "white_nights_second_night_019",
+            "white_nights_second_night_015",
+            "white_nights_fourth_night_014",
+            "white_nights_morning_004"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "development",
+      "presets": {
+        "dense": {
+          "retrieved": [
+            "white_nights_fourth_night_003",
+            "white_nights_second_night_034",
+            "white_nights_fourth_night_011",
+            "white_nights_second_night_016",
+            "white_nights_second_night_007",
+            "white_nights_second_night_037"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "bm25": {
+          "retrieved": [
+            "white_nights_fourth_night_002",
+            "white_nights_second_night_034",
+            "white_nights_second_night_036",
+            "white_nights_second_night_006",
+            "white_nights_second_night_007",
+            "white_nights_third_night_006"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "hybrid": {
+          "retrieved": [
+            "white_nights_second_night_034",
+            "white_nights_second_night_007",
+            "white_nights_fourth_night_001",
+            "white_nights_second_night_037",
+            "white_nights_second_night_009",
+            "white_nights_second_night_006"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "metadata": {
+          "retrieved": [
+            "white_nights_second_night_037",
+            "white_nights_fourth_night_015",
+            "white_nights_fourth_night_003",
+            "white_nights_fourth_night_002",
+            "white_nights_fourth_night_011",
+            "white_nights_third_night_006"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "judge": {
+          "retrieved": [
+            "white_nights_fourth_night_001",
+            "white_nights_third_night_010",
+            "white_nights_second_night_033",
+            "white_nights_second_night_036",
+            "white_nights_fourth_night_003",
+            "white_nights_fourth_night_002"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "narrative": {
+          "retrieved": [
+            "white_nights_fourth_night_001",
+            "white_nights_second_night_033",
+            "white_nights_second_night_036",
+            "white_nights_fourth_night_003",
+            "white_nights_fourth_night_002",
+            "white_nights_fourth_night_011"
+          ],
+          "hit": false,
+          "rank": null
+        },
+        "full_v2": {
+          "retrieved": [
+            "white_nights_fourth_night_001",
+            "white_nights_second_night_033",
+            "white_nights_second_night_036",
+            "white_nights_fourth_night_003",
+            "white_nights_fourth_night_002",
+            "white_nights_fourth_night_011"
+          ],
+          "hit": false,
+          "rank": null
+        }
+      }
+    }
+  ]
+}

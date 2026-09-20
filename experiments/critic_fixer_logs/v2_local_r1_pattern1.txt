@@ -1,0 +1,13 @@
+PATTERN: Misclassification of "explores" as "asserts"
+
+AFFECTED: 8 chunks
+
+FAILURE MECHANISM: The model is incorrectly classifying passages that should be labeled as "explores" as "asserts." This occurs when the Dreamer is engaging in hypothetical or imaginative scenarios, or when there is a sense of wondering or conjecture, but the model interprets these as statements of fact or conviction.
+
+PROMPT LANGUAGE: "Most dialogue in which a speaker states a feeling with conviction is 'asserts'."
+
+WHY THIS CAUSES THE FAILURE: The prompt may be overemphasizing the conviction aspect of "asserts" without adequately distinguishing between conviction in real scenarios and conviction in hypothetical or imaginative scenarios. This can lead to misclassification when the Dreamer is exploring ideas or possibilities rather than stating facts.
+
+PROPOSED FIX: Clarify the distinction between "asserts" and "explores" by emphasizing that "explores" involves hypothetical, imaginative, or conjectural content, even if delivered with rhetorical confidence. Ensure that the model recognizes that confident delivery of a fantasy or hypothetical scenario is still exploring, not asserting.
+
+DRAFT INSTRUCTION: "Most dialogue in which a speaker states a feeling with conviction is 'asserts'. However, if the content is hypothetical, imaginative, or conjectural, it should be classified as 'explores', even if delivered with rhetorical confidence. Confident delivery of a fantasy or hypothetical scenario is exploring the fantasy, not asserting a fact."

@@ -1,0 +1,185 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "EVENT",
+      "hyde_passage": "As I wandered through the bustling streets, lost in my own thoughts, I stumbled upon a quaint little café tucked away in a corner. The aroma of freshly brewed coffee wafted through the air, drawing me in. As I entered, my eyes were immediately drawn to a young woman sitting alone at a table by the window. Her gaze was distant, as if she were lost in a world of her own. I hesitated for a moment, but something compelled me to approach her. With a gentle smile, I introduced myself, and she looked up, her eyes sparkling with curiosity. That was the moment I first met Nastenka, a chance encounter that would change everything.",
+      "union_size": 29,
+      "new_from_hyde": 9,
+      "retrieved": [
+        "white_nights_second_night_037",
+        "white_nights_fourth_night_015",
+        "white_nights_third_night_004",
+        "white_nights_second_night_016",
+        "white_nights_second_night_034",
+        "white_nights_third_night_002"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "TEMPORAL",
+      "hyde_passage": "Before meeting Nastenka, the narrator reflects on his life in Petersburg with a sense of melancholy and isolation. He describes the city as a cold and indifferent place, where the bustling streets and grand architecture only amplify his feelings of loneliness. The days blend into one another, marked by a monotonous routine that leaves him feeling detached from the world around him. He often finds himself wandering aimlessly through the city, observing the lives of others but never truly connecting with them. The narrator's introspection reveals a deep yearning for companionship and meaning, which he feels is absent from his life. This sense of longing intensifies as he recalls moments of fleeting happiness, overshadowed by the pervasive sense of despair that characterizes his existence in Petersburg.",
+      "union_size": 25,
+      "new_from_hyde": 5,
+      "retrieved": [
+        "white_nights_second_night_020",
+        "white_nights_second_night_009",
+        "white_nights_second_night_013",
+        "white_nights_second_night_008",
+        "white_nights_second_night_010",
+        "white_nights_second_night_019"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "MOTIVATION",
+      "hyde_passage": "Nastenka looked at me with a mixture of hope and apprehension. \"You must promise me something,\" she said, her voice barely above a whisper. \"Promise that you won't fall in love with me.\" Her eyes searched mine, as if trying to gauge my reaction. I was taken aback by her request, feeling the weight of her words. It was clear that she was afraid of the complications that love could bring, the potential for heartache and disappointment. She wanted to protect both of us from the emotional turmoil that could arise from such feelings. \"If we meet again,\" she continued, \"let's keep it simple. I don't want to complicate things.\" I nodded, understanding the gravity of her request, and I felt a strange mix of sadness and admiration for her vulnerability.",
+      "union_size": 24,
+      "new_from_hyde": 4,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_second_night_032",
+        "white_nights_second_night_033",
+        "white_nights_fourth_night_003",
+        "white_nights_first_night_016",
+        "white_nights_second_night_037"
+      ],
+      "hit": true,
+      "rank": 5
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "hyde_passage": "Nastenka lived in a small, modest apartment with her grandmother, who was often frail and relied on Nastenka for support. Their days were filled with a quiet routine, where Nastenka took care of household chores while her grandmother shared stories from her youth. One evening, as the lodger prepared to leave for Moscow, he turned to Nastenka with a serious expression. He promised her that he would return and that he would never forget her. This promise hung in the air, filled with hope and uncertainty, as Nastenka watched him depart, her heart a mix of longing and anticipation for the future.",
+      "union_size": 25,
+      "new_from_hyde": 5,
+      "retrieved": [
+        "white_nights_second_night_025",
+        "white_nights_second_night_032",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_second_night_029",
+        "white_nights_second_night_033"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "INTERPRETIVE",
+      "hyde_passage": "As I pondered the nature of \"the dreamer,\" I found myself captivated by the idea that he exists beyond the grasp of desire. The words echoed in my mind, suggesting a profound truth: to be free from longing is to achieve a state of superiority, a realm where fantasy reigns unchallenged. Yet, as I reflected deeper, I sensed an undercurrent of irony woven into the fabric of this assertion. The dreamer's detachment from desire, while seemingly wise, also hinted at a profound emptiness—a life lived in the shadows of what could be, rather than in the vibrant reality of what is. This duality left me questioning whether such a state was truly admirable or merely a poignant commentary on the futility of escaping one's own humanity.",
+      "union_size": 24,
+      "new_from_hyde": 4,
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_014",
+        "white_nights_second_night_012",
+        "white_nights_second_night_019",
+        "white_nights_second_night_005",
+        "white_nights_second_night_011"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "hyde_passage": "The narrator sat across from Nastenka, his voice steady as he spoke about the lodger's continued silence. \"You must understand,\" he urged, \"that his silence is not a reflection of his feelings for you, but rather a sign of his own struggles. He may be waiting for the right moment to express himself.\" Nastenka looked uncertain, her brow furrowed in thought. The narrator continued, \"If you truly care for him, it is essential to take a step forward. Reach out to him, show him that you are willing to listen. Sometimes, a gentle nudge is all it takes to break the barriers of silence.\" He leaned in closer, his eyes earnest. \"You have the power to change this situation, to bring light into his darkness. Don't let fear hold you back.\" Nastenka's expression softened as she considered his words, the weight of the decision settling upon her.",
+      "union_size": 29,
+      "new_from_hyde": 9,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_007",
+        "white_nights_second_night_025",
+        "white_nights_second_night_009",
+        "white_nights_second_night_024"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "hyde_passage": "Nastenka sat by the window, her thoughts swirling like the autumn leaves outside. She often found herself reflecting on the lodger, a figure who had entered her life with an air of mystery and charm. There was a thrill in her heart when she thought of him, a flutter that spoke of longing and excitement. Yet, when she turned her mind to the narrator, a different warmth enveloped her. With him, there was a sense of familiarity, a comfort that felt like home. She could not help but compare the two; the lodger ignited a spark of passion, while the narrator offered a steady flame of affection. In her heart, she wrestled with these contrasting feelings, each one pulling her in a different direction, leaving her both exhilarated and confused.",
+      "union_size": 31,
+      "new_from_hyde": 11,
+      "retrieved": [
+        "white_nights_third_night_008",
+        "white_nights_second_night_024",
+        "white_nights_second_night_025",
+        "white_nights_second_night_026",
+        "white_nights_third_night_004",
+        "white_nights_fourth_night_009"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "INTERPRETIVE",
+      "hyde_passage": "As I stood there, watching Nastenka's eyes light up with recognition, a warmth spread through me, and I felt a surge of joy. \"Now I am happy,\" I declared, the words spilling from my lips with an undeniable truth. In that moment, everything felt perfect, as if the world had aligned just for us. Yet, even as I embraced this fleeting happiness, a whisper of doubt crept into my mind. The shadows of uncertainty loomed at the edges of my bliss, hinting that such moments are often ephemeral. I couldn't shake the feeling that this joy, so vibrant and real, might slip through my fingers like sand, leaving me to wonder if I would ever feel this way again.",
+      "union_size": 24,
+      "new_from_hyde": 4,
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_033",
+        "white_nights_second_night_032",
+        "white_nights_second_night_016",
+        "white_nights_morning_004",
+        "white_nights_third_night_004"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "hyde_passage": "On the Fourth Night, as I sat beside Nastenka, a warmth enveloped me that I had not felt in a long time. Her laughter danced in the air, and for those fleeting moments, the world outside faded away. We shared stories, our eyes sparkling with a connection that felt genuine and alive. It was a stark contrast to the Second Night, where I was lost in my solitary fantasies, weaving elaborate dreams of companionship that only existed in my mind. In those moments of solitude, I had constructed a life filled with longing and desire, but it was a mere shadow of the joy I experienced with Nastenka. The difference was palpable; the happiness I felt with her was real, tangible, while my fantasies were just echoes of what I yearned for, never truly fulfilling.",
+      "union_size": 29,
+      "new_from_hyde": 9,
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_012",
+        "white_nights_second_night_016",
+        "white_nights_second_night_009",
+        "white_nights_morning_004",
+        "white_nights_third_night_002"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "EVENT",
+      "hyde_passage": "As I sat in my dimly lit room, the weight of Nastenka's final letter rested heavily in my hands. Her words danced before my eyes, filled with a mixture of hope and sorrow. I could feel the ache of our shared moments, the laughter and the tears, all culminating in this bittersweet farewell. In her letter, she spoke of new beginnings and the paths we must take, yet I could sense the lingering connection that tethered us to one another.\n\nWith each line, I recalled the warmth of her smile and the way her eyes sparkled with dreams. I knew that our story, though fraught with challenges, had carved a place in my heart that would never fade. As I penned my response, I poured my soul into the ink, expressing my gratitude for the time we shared and the lessons learned. I wanted her to know that even as we parted ways, she would always be a part of me.\n\nIn the end, I sealed the letter with a heavy heart, knowing that this was not just an ending but a transformation. Nastenka and I were stepping into the unknown, each carrying a piece of the other with us. I hoped that she would find the happiness she sought, and in that hope, I found my own sense of resolution.",
+      "union_size": 27,
+      "new_from_hyde": 7,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_second_night_037",
+        "white_nights_fourth_night_003",
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_007",
+        "white_nights_third_night_010"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

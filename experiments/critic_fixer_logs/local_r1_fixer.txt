@@ -1,0 +1,3 @@
+old: Only pick a single name when the other person is truly silent in this passage, or reduced to a bare one-word interjection with no content of its own.
+
+new: Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for "the Dreamer and Nastenka" in the speaking_voice field. Look for any real line from both speakers, regardless of length, to determine dual attribution. Only pick a single name when the other person is truly silent in this passage, or reduced to a bare one-word interjection with no content of its own.

@@ -1,0 +1,13 @@
+PATTERN: Misinterpretation of "self-deception" as "the-city"
+
+AFFECTED: 2 chunks
+
+FAILURE MECHANISM: The model incorrectly tags passages with "the-city" instead of "self-deception" when the Dreamer anthropomorphizes the city or its elements, mistaking this for a theme about the city itself rather than a reflection of the Dreamer's self-deceptive tendencies.
+
+PROMPT LANGUAGE: "Do NOT tag 'unrequited-longing' unless the passage is specifically about longing for a particular unattainable person."
+
+WHY THIS CAUSES THE FAILURE: The prompt does not explicitly guide the model to recognize anthropomorphizing or imaginative interactions with the city as "self-deception," leading to confusion with "the-city."
+
+PROPOSED FIX: Clarify that imaginative or anthropomorphizing interactions with the city or its elements should be considered under "self-deception" if they reflect the Dreamer's substitution of fantasy for reality.
+
+DRAFT INSTRUCTION: "Tag 'self-deception' when the Dreamer engages in imaginative or anthropomorphizing interactions with the city or its elements, reflecting a substitution of fantasy for reality, rather than tagging 'the-city.'"

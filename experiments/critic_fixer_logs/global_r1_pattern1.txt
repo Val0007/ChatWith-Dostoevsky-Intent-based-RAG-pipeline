@@ -1,0 +1,13 @@
+PATTERN: Overuse of "undermines" for Imaginative or Reflective Passages
+
+AFFECTED: 8 chunks
+
+FAILURE MECHANISM: The model is incorrectly labeling passages as "undermines" when they involve the Dreamer's imagination or reflective mood, even when these passages do not clearly depict self-deception or escapism as a substitution for reality.
+
+PROMPT LANGUAGE: "Reserve 'undermines' for passages where the SUBSTITUTION itself is the point: the passage stages an imagined relationship AS IF it were real... or shows the Dreamer explicitly retreating from real people into fantasy."
+
+WHY THIS CAUSES THE FAILURE: The prompt's emphasis on substitution and retreat into fantasy may lead the model to over-apply "undermines" to any passage involving imagination or introspection, even when these elements are not presented as self-deceptive or escapist.
+
+PROPOSED FIX: Clarify that "undermines" should only be used when the passage explicitly critiques the Dreamer's imagination as a substitute for reality, not merely when imagination or reflection is present.
+
+DRAFT INSTRUCTION: "Use 'undermines' only when the passage explicitly critiques the Dreamer's imagination or introspection as a substitute for reality. Do not apply 'undermines' merely because the passage involves imagination or reflection; these elements must be shown as self-deceptive or escapist in a way that substitutes for real connection."

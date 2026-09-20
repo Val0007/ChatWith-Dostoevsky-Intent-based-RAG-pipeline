@@ -1,0 +1,22 @@
+{
+  "local": [
+    {
+      "round": 1,
+      "pattern_name": "explores-vs-asserts hypothetical/conjectural clarification",
+      "old": "Most dialogue in which a speaker states a feeling with conviction is \"asserts\".",
+      "new": "Most dialogue...asserts\". However, if the content is hypothetical, imaginative, or conjectural...",
+      "score_before": "speaker_relation=60%",
+      "score_after": "speaker_relation=57%",
+      "outcome": "REVERTED (no improvement)"
+    },
+    {
+      "round": 2,
+      "pattern_name": "explores-vs-asserts, content-over-tone (removed subject-matter guard)",
+      "old": "Most dialogue...asserts\". Do NOT judge this field from subject matter...",
+      "new": "Most dialogue...asserts\". However, if content is hypothetical...classify as explores regardless of confidence...",
+      "score_before": "speaker_relation=63%",
+      "score_after": "speaker_relation=50%",
+      "outcome": "REVERTED (regression -- removed a load-bearing guard)"
+    }
+  ]
+}

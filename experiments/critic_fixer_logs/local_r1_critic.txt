@@ -1,0 +1,37 @@
+PATTERN: Misidentification of Dual Speaking Voice
+
+AFFECTED: 3 chunks
+
+FAILURE MECHANISM: The system fails to correctly identify when both the Dreamer and Nastenka are speaking with substantive content, leading to incorrect attribution of the speaking_voice field.
+
+PROMPT LANGUAGE: "When the Dreamer is speaking in dialogue, OR reflecting/expressing his own feelings and opinions in his narration... speaking_voice is 'the Dreamer'."
+
+WHY THIS CAUSES THE FAILURE: The prompt emphasizes identifying substantive content from both speakers but may not sufficiently stress the need to recognize short but substantive exchanges as qualifying for dual attribution.
+
+PROPOSED FIX: Emphasize the importance of identifying even brief substantive exchanges between the Dreamer and Nastenka as qualifying for dual speaking_voice attribution.
+
+DRAFT INSTRUCTION: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field. Look for any real line from both speakers, regardless of length, to determine dual attribution."
+
+---
+
+PATTERN: Misclassification of Speaker Relation
+
+AFFECTED: 18 chunks
+
+FAILURE MECHANISM: The system incorrectly classifies the speaker_relation field, often defaulting to "explores" when the content is more assertive or vice versa.
+
+CLASSIFICATION: RESIDUAL MODEL ERROR — no clear prompt-level cause
+
+REASON: The current prompt provides clear guidelines for distinguishing between "asserts," "doubts," "rejects," and "explores." The misclassification appears to stem from the model's difficulty in interpreting the nuanced tone and intent of the speaker, rather than a lack of clarity in the prompt instructions.
+
+---
+
+PATTERN: Incorrect Attribution of Speaking Voice to Nastenka Alone
+
+AFFECTED: 2 chunks
+
+FAILURE MECHANISM: The system incorrectly attributes the speaking_voice to Nastenka alone when both the Dreamer and Nastenka are speaking.
+
+CLASSIFICATION: RESIDUAL MODEL ERROR — no clear prompt-level cause
+
+REASON: The prompt already provides detailed instructions on identifying when both the Dreamer and Nastenka are speaking. The error likely arises from the model's difficulty in consistently applying these instructions, rather than a deficiency in the prompt itself.

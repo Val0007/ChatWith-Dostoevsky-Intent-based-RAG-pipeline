@@ -1,0 +1,721 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_third_night_004",
+          "white_nights_second_night_034",
+          "white_nights_fourth_night_015",
+          "white_nights_second_night_006",
+          "white_nights_third_night_002",
+          "white_nights_second_night_005"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 35
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_second_night_028",
+          "white_nights_second_night_030",
+          "white_nights_second_night_026",
+          "white_nights_second_night_025",
+          "white_nights_third_night_003",
+          "white_nights_fourth_night_014"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_05",
+            "scene_14",
+            "scene_11",
+            "scene_08",
+            "scene_01",
+            "scene_26",
+            "scene_20",
+            "scene_19"
+          ],
+          "dense_scenes": [
+            "scene_13",
+            "scene_15",
+            "scene_19",
+            "scene_26",
+            "scene_23",
+            "scene_21",
+            "scene_18",
+            "scene_14"
+          ],
+          "union_scenes": [
+            "scene_05",
+            "scene_14",
+            "scene_11",
+            "scene_08",
+            "scene_01",
+            "scene_26",
+            "scene_20",
+            "scene_19",
+            "scene_13",
+            "scene_15",
+            "scene_23",
+            "scene_21",
+            "scene_18"
+          ],
+          "candidate_count": 41
+        }
+      }
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_second_night_019",
+          "white_nights_first_night_007",
+          "white_nights_second_night_021",
+          "white_nights_second_night_012",
+          "white_nights_second_night_005",
+          "white_nights_third_night_005"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 31
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_second_night_018",
+          "white_nights_second_night_005",
+          "white_nights_first_night_002",
+          "white_nights_first_night_005",
+          "white_nights_first_night_012",
+          "white_nights_second_night_012"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_07",
+            "scene_01",
+            "scene_11",
+            "scene_04",
+            "scene_08",
+            "scene_23",
+            "scene_09",
+            "scene_19"
+          ],
+          "dense_scenes": [
+            "scene_07",
+            "scene_19",
+            "scene_12",
+            "scene_11",
+            "scene_15",
+            "scene_01",
+            "scene_13",
+            "scene_02"
+          ],
+          "union_scenes": [
+            "scene_07",
+            "scene_01",
+            "scene_11",
+            "scene_04",
+            "scene_08",
+            "scene_23",
+            "scene_09",
+            "scene_19",
+            "scene_12",
+            "scene_15",
+            "scene_13",
+            "scene_02"
+          ],
+          "candidate_count": 39
+        }
+      }
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_011",
+          "white_nights_third_night_002",
+          "white_nights_fourth_night_004",
+          "white_nights_fourth_night_008",
+          "white_nights_second_night_036",
+          "white_nights_third_night_009"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 29
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_009",
+          "white_nights_fourth_night_008",
+          "white_nights_fourth_night_005",
+          "white_nights_fourth_night_006",
+          "white_nights_fourth_night_011",
+          "white_nights_first_night_018"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_05",
+            "scene_20",
+            "scene_17",
+            "scene_14",
+            "scene_06",
+            "scene_04",
+            "scene_13",
+            "scene_26"
+          ],
+          "dense_scenes": [
+            "scene_24",
+            "scene_23",
+            "scene_19",
+            "scene_18",
+            "scene_21",
+            "scene_25",
+            "scene_20",
+            "scene_22"
+          ],
+          "union_scenes": [
+            "scene_05",
+            "scene_20",
+            "scene_17",
+            "scene_14",
+            "scene_06",
+            "scene_04",
+            "scene_13",
+            "scene_26",
+            "scene_24",
+            "scene_23",
+            "scene_19",
+            "scene_18",
+            "scene_21",
+            "scene_25",
+            "scene_22"
+          ],
+          "candidate_count": 46
+        }
+      }
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_second_night_033",
+          "white_nights_second_night_035",
+          "white_nights_second_night_034",
+          "white_nights_second_night_031",
+          "white_nights_second_night_025",
+          "white_nights_second_night_024"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 26
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_second_night_033",
+          "white_nights_second_night_032",
+          "white_nights_second_night_029",
+          "white_nights_second_night_025",
+          "white_nights_second_night_035",
+          "white_nights_second_night_028"
+        ],
+        "hit": true,
+        "rank": 2,
+        "debug": {
+          "bm25_scenes": [
+            "scene_15",
+            "scene_13",
+            "scene_16",
+            "scene_06",
+            "scene_14",
+            "scene_26",
+            "scene_25",
+            "scene_01"
+          ],
+          "dense_scenes": [
+            "scene_13",
+            "scene_15",
+            "scene_14",
+            "scene_16",
+            "scene_21",
+            "scene_18",
+            "scene_26",
+            "scene_17"
+          ],
+          "union_scenes": [
+            "scene_15",
+            "scene_13",
+            "scene_16",
+            "scene_06",
+            "scene_14",
+            "scene_26",
+            "scene_25",
+            "scene_01",
+            "scene_21",
+            "scene_18",
+            "scene_17"
+          ],
+          "candidate_count": 35
+        }
+      }
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_second_night_014",
+          "white_nights_second_night_015",
+          "white_nights_second_night_005",
+          "white_nights_second_night_019",
+          "white_nights_second_night_020",
+          "white_nights_second_night_010"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 35
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_second_night_014",
+          "white_nights_second_night_019",
+          "white_nights_second_night_021",
+          "white_nights_second_night_015",
+          "white_nights_third_night_002",
+          "white_nights_second_night_012"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_10",
+            "scene_11",
+            "scene_14",
+            "scene_21",
+            "scene_19",
+            "scene_26",
+            "scene_18",
+            "scene_06"
+          ],
+          "dense_scenes": [
+            "scene_10",
+            "scene_09",
+            "scene_12",
+            "scene_07",
+            "scene_06",
+            "scene_05",
+            "scene_11",
+            "scene_04"
+          ],
+          "union_scenes": [
+            "scene_10",
+            "scene_11",
+            "scene_14",
+            "scene_21",
+            "scene_19",
+            "scene_26",
+            "scene_18",
+            "scene_06",
+            "scene_09",
+            "scene_12",
+            "scene_07",
+            "scene_05",
+            "scene_04"
+          ],
+          "candidate_count": 40
+        }
+      }
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_003",
+          "white_nights_third_night_007",
+          "white_nights_fourth_night_002",
+          "white_nights_second_night_034",
+          "white_nights_second_night_005",
+          "white_nights_second_night_033"
+        ],
+        "hit": true,
+        "rank": 4,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 34
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_002",
+          "white_nights_fourth_night_003",
+          "white_nights_second_night_035",
+          "white_nights_third_night_007",
+          "white_nights_second_night_001",
+          "white_nights_second_night_002"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_06",
+            "scene_14",
+            "scene_22",
+            "scene_15",
+            "scene_17",
+            "scene_18",
+            "scene_11",
+            "scene_20"
+          ],
+          "dense_scenes": [
+            "scene_15",
+            "scene_16",
+            "scene_13",
+            "scene_14",
+            "scene_17",
+            "scene_22",
+            "scene_23",
+            "scene_20"
+          ],
+          "union_scenes": [
+            "scene_06",
+            "scene_14",
+            "scene_22",
+            "scene_15",
+            "scene_17",
+            "scene_18",
+            "scene_11",
+            "scene_20",
+            "scene_16",
+            "scene_13",
+            "scene_23"
+          ],
+          "candidate_count": 33
+        }
+      }
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_third_night_002",
+          "white_nights_third_night_008",
+          "white_nights_fourth_night_002",
+          "white_nights_fourth_night_008",
+          "white_nights_fourth_night_005",
+          "white_nights_third_night_009"
+        ],
+        "hit": true,
+        "rank": 2,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 35
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_011",
+          "white_nights_fourth_night_008",
+          "white_nights_third_night_009",
+          "white_nights_third_night_002",
+          "white_nights_second_night_018",
+          "white_nights_fourth_night_002"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_scenes": [
+            "scene_14",
+            "scene_11",
+            "scene_15",
+            "scene_25",
+            "scene_24",
+            "scene_13",
+            "scene_22",
+            "scene_21"
+          ],
+          "dense_scenes": [
+            "scene_15",
+            "scene_19",
+            "scene_16",
+            "scene_20",
+            "scene_25",
+            "scene_24",
+            "scene_18",
+            "scene_21"
+          ],
+          "union_scenes": [
+            "scene_14",
+            "scene_11",
+            "scene_15",
+            "scene_25",
+            "scene_24",
+            "scene_13",
+            "scene_22",
+            "scene_21",
+            "scene_19",
+            "scene_16",
+            "scene_20",
+            "scene_18"
+          ],
+          "candidate_count": 36
+        }
+      }
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_third_night_002",
+          "white_nights_second_night_018",
+          "white_nights_third_night_001",
+          "white_nights_morning_004",
+          "white_nights_first_night_018",
+          "white_nights_third_night_009"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 29
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_third_night_002",
+          "white_nights_fourth_night_012",
+          "white_nights_fourth_night_014",
+          "white_nights_fourth_night_015",
+          "white_nights_third_night_009",
+          "white_nights_third_night_010"
+        ],
+        "hit": true,
+        "rank": 2,
+        "debug": {
+          "bm25_scenes": [
+            "scene_18",
+            "scene_14",
+            "scene_26",
+            "scene_21",
+            "scene_13",
+            "scene_17",
+            "scene_03",
+            "scene_06"
+          ],
+          "dense_scenes": [
+            "scene_19",
+            "scene_25",
+            "scene_11",
+            "scene_21",
+            "scene_20",
+            "scene_12",
+            "scene_27",
+            "scene_26"
+          ],
+          "union_scenes": [
+            "scene_18",
+            "scene_14",
+            "scene_26",
+            "scene_21",
+            "scene_13",
+            "scene_17",
+            "scene_03",
+            "scene_06",
+            "scene_19",
+            "scene_25",
+            "scene_11",
+            "scene_20",
+            "scene_12",
+            "scene_27"
+          ],
+          "candidate_count": 42
+        }
+      }
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_third_night_002",
+          "white_nights_second_night_015",
+          "white_nights_second_night_019",
+          "white_nights_second_night_020",
+          "white_nights_second_night_018",
+          "white_nights_fourth_night_014"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 28
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_012",
+          "white_nights_second_night_018",
+          "white_nights_fourth_night_014",
+          "white_nights_fourth_night_015",
+          "white_nights_third_night_003",
+          "white_nights_second_night_019"
+        ],
+        "hit": true,
+        "rank": 1,
+        "debug": {
+          "bm25_scenes": [
+            "scene_11",
+            "scene_27",
+            "scene_01",
+            "scene_08",
+            "scene_09",
+            "scene_26",
+            "scene_04",
+            "scene_02"
+          ],
+          "dense_scenes": [
+            "scene_19",
+            "scene_11",
+            "scene_12",
+            "scene_25",
+            "scene_21",
+            "scene_20",
+            "scene_26",
+            "scene_18"
+          ],
+          "union_scenes": [
+            "scene_11",
+            "scene_27",
+            "scene_01",
+            "scene_08",
+            "scene_09",
+            "scene_26",
+            "scene_04",
+            "scene_02",
+            "scene_19",
+            "scene_12",
+            "scene_25",
+            "scene_21",
+            "scene_20",
+            "scene_18"
+          ],
+          "candidate_count": 45
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "production_judge": {
+        "retrieved": [
+          "white_nights_fourth_night_001",
+          "white_nights_fourth_night_005",
+          "white_nights_morning_001",
+          "white_nights_second_night_036",
+          "white_nights_second_night_037",
+          "white_nights_third_night_010"
+        ],
+        "hit": false,
+        "rank": null,
+        "debug": {
+          "bm25_n": 15,
+          "dense_n": 15,
+          "metadata_n": 15,
+          "union_size": 34
+        }
+      },
+      "scene_card_judge": {
+        "retrieved": [
+          "white_nights_morning_003",
+          "white_nights_morning_001",
+          "white_nights_second_night_033",
+          "white_nights_morning_002",
+          "white_nights_third_night_002",
+          "white_nights_fourth_night_001"
+        ],
+        "hit": true,
+        "rank": 4,
+        "debug": {
+          "bm25_scenes": [
+            "scene_22",
+            "scene_14",
+            "scene_08",
+            "scene_13",
+            "scene_11",
+            "scene_27",
+            "scene_18",
+            "scene_21"
+          ],
+          "dense_scenes": [
+            "scene_27",
+            "scene_22",
+            "scene_21",
+            "scene_26",
+            "scene_18",
+            "scene_11",
+            "scene_19",
+            "scene_16"
+          ],
+          "union_scenes": [
+            "scene_22",
+            "scene_14",
+            "scene_08",
+            "scene_13",
+            "scene_11",
+            "scene_27",
+            "scene_18",
+            "scene_21",
+            "scene_26",
+            "scene_19",
+            "scene_16"
+          ],
+          "candidate_count": 33
+        }
+      }
+    }
+  ]
+}

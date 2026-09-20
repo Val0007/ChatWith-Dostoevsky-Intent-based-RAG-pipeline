@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The current prompt's guidance for identifying the speaker in a passage is biased towards selecting a single dominant voice, particularly when one speaker has a longer turn. The instruction "For a passage that is clearly a back-and-forth exchange with no single dominant voice, set speaker to 'the Dreamer and Nastenka'" is not sufficiently clear about what constitutes a "dominant voice." This leads to the misinterpretation that longer speech equates to dominance, even when both speakers contribute substantively.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "For a passage that is clearly a back-and-forth exchange with no single dominant voice, set speaker to 'the Dreamer and Nastenka'."
+new: "For a passage that is a back-and-forth exchange where both the Dreamer and Nastenka contribute substantively, set speaker to 'the Dreamer and Nastenka', even if one speaks at greater length."
+
+REGRESSION RISK:
+This patch could potentially lead to over-attribution of "the Dreamer and Nastenka" in passages where one speaker's contribution is minimal or non-substantive, as it emphasizes substantive contribution over length.

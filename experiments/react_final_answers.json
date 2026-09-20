@@ -1,0 +1,146 @@
+[
+  {
+    "id": "q01",
+    "night": "First Night",
+    "intent": "factual",
+    "question": "How does the narrator first meet Nastenka?",
+    "expected_answer": "Walking home late one night, he sees a girl crying alone by the canal. A drunken gentleman starts pursuing her; the narrator drives him off with his walking stick, then offers her his arm, and the two fall into conversation as he sees her home.",
+    "gold_evidence": [
+      "white_nights_first_night_009",
+      "white_nights_first_night_010"
+    ],
+    "llm_answer": "The narrator first meets Nastenka in the second night of \"White Nights.\" In this scene, Nastenka is waiting for a man she loves, and the narrator encounters her while she is in a state of anticipation and anxiety. She expresses her feelings of longing and hope, as well as her frustration over the man's absence. The interaction begins with Nastenka giving the narrator a letter to deliver to her beloved, revealing her emotional vulnerability and the nature of her connection with the narrator.\n\nIn a passage from this scene, Nastenka says, \"I know he has arrived already; but now it's the third day, and there's no sign of him and no letter.\" This highlights her emotional turmoil and sets the stage for the developing relationship between her and the narrator, who is drawn to her despite her focus on another man. The narrator reflects on his feelings for her, recognizing the complexity of their situation as he becomes more involved in her life. This initial meeting is marked by a mix of affection and unrequited longing, which complicates their connection.",
+    "steps": 6,
+    "encountered": 5,
+    "confirmed": 1
+  },
+  {
+    "id": "q02",
+    "night": "First Night",
+    "intent": "character",
+    "question": "How does the narrator describe his own life in Petersburg before meeting Nastenka?",
+    "expected_answer": "He says he has lived in Petersburg eight years without making one real acquaintance. He is so starved for connection that he has formed one-sided attachments to the houses on his streets and to an old man he passes on his walks, and he is thrown into anxious loneliness each summer when the city empties out and even those imagined \"friends\" disappear.",
+    "gold_evidence": [
+      "white_nights_first_night_001"
+    ],
+    "llm_answer": "Before meeting Nastenka, the narrator describes his life in Petersburg as one filled with profound loneliness and a sense of isolation. In the first night of the story, he reflects on a beautiful night in Petersburg, but instead of feeling uplifted, he is overwhelmed by a strange despondency. He notes, \"It suddenly seemed to me that I was lonely, that every one was forsaking me and going away from me.\" Despite having lived in the city for eight years, he admits to having hardly any acquaintances, feeling abandoned as familiar faces disappear for the summer. He expresses a peculiar attachment to the people and buildings of Petersburg, stating, \"I felt as though they were all deserting me when all Petersburg packed up and went to its summer villa.\" This highlights his deep sense of disconnection from others and the emotional weight of his solitude.\n\nAdditionally, in another passage, he reflects on the passage of time and the emptiness of his past, lamenting that his life has been filled with \"shadowy fantasies rather than genuine experiences.\" He longs for the rekindling of past emotions but recognizes that they are gone, which further underscores his feelings of isolation and the lack of meaningful connections in his life. He questions, \"Where have you buried your best days? Have you lived or not?\" This introspection reveals his inner turmoil and the yearning for a more fulfilling existence, which he hopes to find through his connection with Nastenka.",
+    "steps": 6,
+    "encountered": 14,
+    "confirmed": 1
+  },
+  {
+    "id": "q03",
+    "night": "First Night",
+    "intent": "motivation",
+    "question": "Why does Nastenka make the narrator promise not to fall in love with her before agreeing to meet again?",
+    "expected_answer": "She wants a friend and confidant, not a suitor. She tells him she has no one else to talk to or ask advice from, and is explicit that friendship, not romance, is the only thing on offer.",
+    "gold_evidence": [
+      "white_nights_first_night_016"
+    ],
+    "llm_answer": "Nastenka's insistence that the narrator promise not to fall in love with her before agreeing to meet again reflects her awareness of the complexities and potential emotional turmoil that could arise from their connection. In the passage from the First Night, she explicitly states, \"you must not think the worse of me now! Don't think I make appointments so lightly.... I shouldn't make it except that.... But let that be my secret! Only a compact beforehand....\" This indicates that she is cautious about the nature of their relationship and wants to establish boundaries to protect both herself and the narrator from deeper emotional entanglements.\n\nHer request highlights her desire for companionship without the complications that romantic feelings might introduce. Nastenka is likely aware of her own vulnerabilities and the risks of becoming emotionally invested, especially given her circumstances and the loneliness she expresses. The narrator's excitement and willingness to comply with her conditions (\"I swear,\" he cries, \"gripping her hand\") shows his eagerness to connect with her, but Nastenka's caution complicates this budding relationship. \n\nUltimately, her request underscores the themes of ephemeral connection and the fear of unrequited longing that permeate Dostoevsky's narrative. Nastenka seeks to navigate her feelings carefully, indicating a desire to maintain some control over her emotional state in a situation that feels precarious.",
+    "steps": 6,
+    "encountered": 10,
+    "confirmed": 0
+  },
+  {
+    "id": "q04",
+    "night": "Second Night",
+    "intent": "factual",
+    "question": "What was Nastenka's living situation with her grandmother, and what promise did the lodger make before leaving for Moscow?",
+    "expected_answer": "Nastenka's blind grandmother literally pinned Nastenka's dress to her own so she could not leave her side, keeping her under constant, strict supervision. The lodger, whom Nastenka fell for, refused to promise marriage outright before leaving for a year in Moscow — he said he had nothing to marry on yet, and only promised that if she still loved him, and he had not found someone he preferred, they would \"certainly\" be happy — carefully avoiding any binding commitment.",
+    "gold_evidence": [
+      "white_nights_second_night_023",
+      "white_nights_second_night_032"
+    ],
+    "llm_answer": "Nastenka lives with her grandmother in a small wooden house, which they own, and they rely on the rent from a lodger to help cover their expenses, alongside her grandmother's pension. Nastenka describes their financial situation, stating, \"we could not live without a lodger—the rent, together with grandmother's pension, is almost all we have\" (Second Night | scene_14, section 24). This highlights their dependence on the lodger for financial stability.\n\nBefore leaving for Moscow, the lodger makes a heartfelt promise to Nastenka. He tells her, \"I swear to you that if I am ever in a position to marry, you shall make my happiness. I assure you that now you are the only one who could make me happy\" (Second Night | scene_16, section 32). He expresses his hope to establish his position during his time away and assures her that if he is able to marry in the future, she will be the one he chooses. This promise underscores the emotional connection between them, even amidst the uncertainty of their circumstances.",
+    "steps": 6,
+    "encountered": 7,
+    "confirmed": 1
+  },
+  {
+    "id": "q05",
+    "night": "Second Night",
+    "intent": "interpretive",
+    "question": "When the narrator rhapsodizes that \"the dreamer\" desires nothing because he is \"superior to all desire\" and lives entirely in fantasy, does the book present this as genuine wisdom, or does it undercut the claim?",
+    "expected_answer": "It undercuts the claim. The speech itself frames the dreamer's contentment as a \"delusion of the imagination\" that he only manages to believe is real at certain moments, and the story's own ending — his heartbreak once he risks a real connection — shows this self-sufficiency is a defense against life rather than a superior state. The rapture is being portrayed as self-deception, not endorsed as wisdom.",
+    "gold_evidence": [
+      "white_nights_second_night_013"
+    ],
+    "llm_answer": "In \"White Nights,\" the narrator's rhapsodizing about \"the dreamer\" who is \"superior to all desire\" and lives entirely in fantasy is ultimately undercut by the text itself. While the Dreamer asserts that he has everything he needs and is satiated, the book questions the validity of this self-deception. \n\nIn the passage from scene 10, the Dreamer believes he is an artist of his own life, creating it to suit his whims, and feels a sense of superiority over desire. However, the narrator reflects on the potential for this dreamer to one day yearn for the simple joys of life, suggesting that his current state is a delusion. The narrator states, \"he thinks that this is a poor pitiful life, not foreseeing that for him too, maybe sometime the mournful hour may strike,\" indicating that the Dreamer's contentment is precarious and may not last.\n\nFurthermore, in another passage, the Dreamer experiences moments where he feels that his fantasies are real, yet he also acknowledges the bittersweet nature of love and the pain of separation, which reveals the emptiness of living solely in fantasy. The narrator notes, \"one deceives oneself and unconsciously believes that real true passion is stirring one's soul,\" again undermining the idea that the Dreamer's detachment from desire is wise or fulfilling.\n\nThus, while the Dreamer may assert a sense of superiority over desire, the narrative ultimately critiques this perspective, illustrating the limitations and dangers of living in a world of fantasy disconnected from reality.",
+    "steps": 6,
+    "encountered": 10,
+    "confirmed": 1
+  },
+  {
+    "id": "q06",
+    "night": "Second Night",
+    "intent": "evaluation",
+    "question": "What does the narrator convince Nastenka to do about the lodger's continued silence, and on what grounds does he argue for it?",
+    "expected_answer": "He urges her to write the lodger a letter herself rather than wait passively, arguing that because the lodger made her a promise, she has the right to remind him of it and take the first step — it isn't improper given their history.",
+    "gold_evidence": [
+      "white_nights_second_night_034"
+    ],
+    "llm_answer": "The narrator convinces Nastenka to write a letter to the lodger, who has not contacted her despite promising to do so. He argues that she has the right to reach out to him because he made a promise to her. In a moment of emotional turmoil, Nastenka expresses her sorrow and frustration over the lodger's silence, and the narrator, feeling desperate to help her, insists that she should not feel as though she is imposing on him. He reassures her, saying, \"Ah, my good little Nastenka... you have a right to, in fact, because he made you a promise.\" This argument reflects the themes of unrequited longing and the complexities of emotional connection, as Nastenka grapples with her feelings of vulnerability and the fear of rejection. \n\nDespite the narrator's encouragement, Nastenka initially resists the idea, feeling that writing would seem like forcing herself on the lodger. However, the narrator's insistence and belief in her right to communicate ultimately complicate her emotional state, highlighting the tension between desire and self-doubt.",
+    "steps": 6,
+    "encountered": 11,
+    "confirmed": 0
+  },
+  {
+    "id": "q07",
+    "night": "Third Night",
+    "intent": "comparative",
+    "question": "How does Nastenka compare her feelings for the lodger with her feelings for the narrator?",
+    "expected_answer": "She says she loves the lodger more, but respects and half-fears him because he is grave and proud, whereas she is at ease enough with the narrator to say anything to him. The narrator points out that this very ease is proof her love for the lodger outweighs even her feeling for herself — not evidence the lodger is the lesser man.",
+    "gold_evidence": [
+      "white_nights_third_night_008"
+    ],
+    "llm_answer": "Nastenka's feelings for the lodger and the narrator are complex and layered, as illustrated in several passages from *White Nights*. \n\nIn the scene from the **Third Night**, Nastenka expresses a clear distinction between her feelings for the lodger and her feelings for the narrator. She acknowledges that while she loves the lodger more deeply, she finds the narrator to possess a better character. She states, \"Of course I know it's only that he seems like that, I know there is more tenderness in his heart than in mine....\" Here, she reveals her admiration for the lodger's perceived qualities, indicating that her love for him is intertwined with a sense of respect and fear. In contrast, her relationship with the narrator is characterized by a more immediate emotional connection, as she seeks comfort in his presence during her time of distress.\n\nNastenka also reflects on the nature of human relationships, questioning why people often hide their true feelings. She expresses a desire for openness, stating, \"Why not say straight out what is in one's heart, when one knows that one is not speaking idly?\" This sentiment highlights her struggle with the emotional barriers that exist not only in her feelings for the lodger but also in her interactions with the narrator. The narrator, in turn, suppresses his own feelings, indicating a tension between his affection for her and the awareness of her love for another.\n\nIn the **Second Night**, Nastenka's recounting of her experiences with the lodger further complicates her feelings. She feels a mix of joy and anxiety regarding the lodger's attention, which she initially interprets as genuine interest but later comes to see as pity. This realization leads her to feel restless and emotionally unstable, contrasting with the more stable and supportive relationship she has with the narrator.\n\nOverall, Nastenka's feelings for the lodger are marked by a romantic idealism and emotional turmoil, while her feelings for the narrator are rooted in companionship and understanding, albeit complicated by her unrequited love for the lodger.",
+    "steps": 6,
+    "encountered": 10,
+    "confirmed": 0
+  },
+  {
+    "id": "q08",
+    "night": "Fourth Night",
+    "intent": "evaluation",
+    "question": "When the narrator declares \"now I am happy\" after Nastenka seems to turn to him, is that happiness presented as secure, or does the narrative signal it won't last?",
+    "expected_answer": "The narrative signals it is precarious even as he says it. The joy exists only because the lodger has apparently failed to appear, and the scene sits right before Nastenka's reunion with the lodger on the embankment undoes it — the declaration reads as premature, not a settled outcome.",
+    "gold_evidence": [
+      "white_nights_fourth_night_012"
+    ],
+    "llm_answer": "The narrator's declaration of \"now I am happy\" occurs in a moment filled with emotional intensity and a sense of hope. However, the narrative signals that this happiness is precarious and likely to be fleeting. \n\nIn the passage from the Fourth Night, Nastenka expresses her conflicting feelings about her love for another man while also acknowledging her feelings for the narrator. She asks if he can love her enough to replace her old feelings, which complicates the situation. The narrator's overwhelming emotion in response to her question reveals a deep longing, yet the context suggests that their happiness is built on uncertain foundations. Nastenka's struggle with her past love and her plea for the narrator's love to drive away her old feelings indicate that their connection is not entirely secure.\n\nMoreover, the narrative often explores themes of ephemeral connection and unrequited longing, suggesting that moments of happiness are intertwined with the potential for loss or disappointment. The narrator's happiness is thus portrayed as a transient state, one that may not endure in the face of Nastenka's unresolved feelings for another man. This complexity is underscored by the emotional turmoil both characters experience, hinting that their joy may be short-lived. \n\nIn summary, while the narrator feels a moment of happiness, the narrative context indicates that this happiness is fragile and likely to be challenged by the realities of their situation.",
+    "steps": 6,
+    "encountered": 9,
+    "confirmed": 0
+  },
+  {
+    "id": "q09",
+    "night": "Fourth Night",
+    "intent": "comparative",
+    "question": "How does the narrator's brief real happiness with Nastenka in the Fourth Night differ from the solitary fantasy life he described on the Second Night?",
+    "expected_answer": "On the Second Night his happiness was entirely self-manufactured — a private theater of imagined loves and adventures that costs him nothing and involves no other person. On the Fourth Night, for the first time, his joy depends on someone real reciprocating, which is exactly why it is fragile: a fantasy cannot be taken from him, but a real Nastenka can walk away — and does.",
+    "gold_evidence": [
+      "white_nights_second_night_013",
+      "white_nights_fourth_night_012"
+    ],
+    "llm_answer": "In *White Nights*, the narrator's brief happiness with Nastenka in the Fourth Night starkly contrasts with the solitary fantasy life he described on the Second Night. \n\nOn the Second Night, the narrator, embodying the Dreamer, reflects on the nature of dreams and desires, expressing a longing for a life filled with passion and love. He describes a dreamer who feels superior to desire, believing he has everything he needs and is satiated, yet this self-deception leads to a profound emptiness. The Dreamer asserts, \"he desires nothing, because he is superior to all desire, because he has everything, because he is satiated,\" but the narrative ultimately undermines this belief, suggesting that such a state is a delusion that may one day lead to regret when the \"mournful hour may strike\" (Second Night | scene_10).\n\nIn contrast, during the Fourth Night, the narrator experiences genuine connection and joy with Nastenka. This happiness is rooted in real interaction and emotional exchange, rather than the ephemeral and isolated fantasies he previously indulged in. The narrator's fantasies, filled with \"magic phantasms\" and \"ecstatic dreams,\" are depicted as ultimately hollow, as he realizes that they lack the substance of true human connection (Second Night | scene_09). \n\nThe happiness with Nastenka is significant because it represents a departure from the Dreamer's solitary existence. While he previously found solace in his imaginative creations, the brief moments of real joy with Nastenka highlight the limitations of his earlier fantasies. The narrator's experience with Nastenka is a tangible connection that brings him a sense of fulfillment that his dreams could not provide, emphasizing the value of real relationships over the seductive allure of solitary daydreaming.",
+    "steps": 6,
+    "encountered": 9,
+    "confirmed": 0
+  },
+  {
+    "id": "q10",
+    "night": "Morning",
+    "intent": "development",
+    "question": "How does the story resolve for the narrator and Nastenka, and how does he respond to her final letter?",
+    "expected_answer": "Nastenka's former lover returns after all; she runs to him on the embankment and leaves with him. The next day she sends the narrator a letter announcing she is to marry the lodger, asking his forgiveness and hoping to remain friends. The narrator is devastated but does not resent her — he blesses her happiness and closes by asking whether a whole moment of happiness isn't enough for an entire lifetime, treating the one moment of love he received from her as sufficient despite everything.",
+    "gold_evidence": [
+      "white_nights_morning_002",
+      "white_nights_morning_004"
+    ],
+    "llm_answer": "In \"White Nights,\" the resolution for the narrator and Nastenka is complex and bittersweet. Throughout the story, the narrator develops deep feelings for Nastenka, but she remains emotionally tied to another man, which complicates their connection.\n\nIn the Fourth Night, scene 22, Nastenka expresses her sorrow and confusion over the silence of the man she loves, feeling abandoned and insulted. Despite her emotional turmoil, she insists that she will forget him, revealing her vulnerability and the depth of her feelings. The narrator, overwhelmed by his own feelings for her, confesses his love, acknowledging the impossibility of their situation. He offers to confront the man on her behalf, but Nastenka ultimately refuses, indicating her desire to move on.\n\nThe narrative does not provide a clear resolution to their relationship. Nastenka's struggle with her feelings and the narrator's unrequited love leave both characters in a state of unresolved longing. The narrator's response to her final letter is not explicitly detailed in the text, but it is clear that he is deeply affected by her emotional state and the realization that their connection may not lead to a romantic relationship.\n\nIn summary, while the narrator's feelings for Nastenka are profound, the story concludes with a sense of unresolved longing and the recognition that their paths may not align, reflecting the themes of unrequited love and ephemeral connections that permeate the narrative.",
+    "steps": 6,
+    "encountered": 10,
+    "confirmed": 1
+  }
+]

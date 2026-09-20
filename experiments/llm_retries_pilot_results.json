@@ -1,0 +1,432 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "EVENT",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 24,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not explicitly describe the first meeting between the narrator and Nastenka. They contain interactions and emotions but lack the concrete details of their initial encounter.",
+          "new_queries": [
+            "narrator first meeting Nastenka",
+            "how did the narrator and Nastenka meet for the first time",
+            "description of the first encounter between narrator and Nastenka"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not explicitly describe the first meeting between the narrator and Nastenka. They contain interactions and emotions but lack a clear account of how they first met.",
+          "new_queries": [
+            "narrator first encounter with Nastenka",
+            "how did the narrator and Nastenka meet for the first time",
+            "details of the narrator's first meeting with Nastenka"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear description of the narrator's first meeting with Nastenka. They contain interactions and emotions but lack the specific event of their initial encounter.",
+          "new_queries": [
+            "narrator's first meeting with Nastenka details",
+            "how did the narrator and Nastenka meet for the first time description",
+            "narrator's initial encounter with Nastenka"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_037",
+        "white_nights_fourth_night_015",
+        "white_nights_third_night_004",
+        "white_nights_second_night_016",
+        "white_nights_second_night_034",
+        "white_nights_third_night_002"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "TEMPORAL",
+      "retried": false,
+      "attempts": 1,
+      "union_size": 6,
+      "checks": [
+        {
+          "verdict": "SUFFICIENT",
+          "reason": "The retrieved passages provide a detailed description of the narrator's life in Petersburg before meeting Nastenka, including his feelings of loneliness, nostalgia, and the contrast between his past dreams and present reality.",
+          "new_queries": []
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_020",
+        "white_nights_second_night_009",
+        "white_nights_second_night_013",
+        "white_nights_second_night_008",
+        "white_nights_second_night_010",
+        "white_nights_second_night_019"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "MOTIVATION",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 39,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear explanation of why Nastenka makes the narrator promise not to fall in love with her. There is a mention of her asking for a compact, but the underlying motivations or feelings behind this request are not sufficiently detailed.",
+          "new_queries": [
+            "Nastenka's reasons for asking the narrator not to fall in love with her",
+            "Nastenka's feelings about love and relationships",
+            "Nastenka's past experiences influencing her request to the narrator"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear explanation for why Nastenka makes the narrator promise not to fall in love with her. There is a mention of her asking for a compact, but the underlying motivations or past experiences that lead to this request are not explicitly detailed.",
+          "new_queries": [
+            "Nastenka's reasons for fearing love or commitment",
+            "Nastenka's past relationships influencing her request to the narrator",
+            "Nastenka's emotional state regarding love and friendship"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide clear evidence for Nastenka's motivations behind asking the narrator not to fall in love with her. There is a lack of explicit reasoning or emotional context that explains her request.",
+          "new_queries": [
+            "Nastenka's fears about love and commitment in her relationship with the narrator",
+            "Nastenka's past experiences influencing her feelings about love",
+            "Nastenka's emotional state regarding her relationship with the narrator"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_second_night_032",
+        "white_nights_second_night_033",
+        "white_nights_fourth_night_003",
+        "white_nights_first_night_016",
+        "white_nights_second_night_037"
+      ],
+      "hit": true,
+      "rank": 5
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "retried": false,
+      "attempts": 1,
+      "union_size": 6,
+      "checks": [
+        {
+          "verdict": "SUFFICIENT",
+          "reason": "The retrieved passages provide clear details about Nastenka's living situation with her grandmother and the promise made by the lodger before leaving for Moscow.",
+          "new_queries": []
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_025",
+        "white_nights_second_night_032",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_second_night_029",
+        "white_nights_second_night_033"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "INTERPRETIVE",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 28,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages provide insight into the dreamer's state and his relationship with desire, but they do not clearly establish whether the book presents his condition as genuine wisdom or if it undercuts that claim. More evidence is needed to clarify the author's stance on this interpretation.",
+          "new_queries": [
+            "Does the narrator view the dreamer's lack of desire as wisdom or a delusion?",
+            "How does the book portray the consequences of the dreamer's fantasy life?",
+            "What does the narrator suggest about the nature of the dreamer's happiness and its validity?"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages provide insight into the dreamer's fantasy life and his perception of reality, but they do not clearly establish whether the narrator presents the dreamer's lack of desire as genuine wisdom or as a delusion. More specific evidence is needed to clarify the narrator's stance on this interpretation.",
+          "new_queries": [
+            "Does the narrator explicitly label the dreamer's lack of desire as wisdom or delusion?",
+            "What does the narrator say about the consequences of the dreamer's fantasy on his perception of reality?",
+            "How does the narrator contrast the dreamer's life with the lives of others in terms of wisdom or delusion?"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages provide some insight into the dreamer's state of mind and the nature of his fantasies, but they do not clearly establish whether the narrator presents the dreamer's lack of desire as genuine wisdom or as a delusion. There is ambiguity in the portrayal of the dreamer's experiences and feelings, which leaves the question unanswered.",
+          "new_queries": [
+            "How does the narrator evaluate the dreamer's perception of reality versus fantasy?",
+            "What does the narrator imply about the consequences of the dreamer's detachment from desire?",
+            "Are there moments in the text where the narrator explicitly critiques or supports the dreamer's worldview?"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_014",
+        "white_nights_second_night_012",
+        "white_nights_second_night_019",
+        "white_nights_second_night_005",
+        "white_nights_second_night_011"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 26,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide clear evidence of what the narrator convinces Nastenka to do regarding the lodger's silence or the grounds for his argument. The conversations hint at the narrator's suggestions but lack explicit details about the actions taken and the reasoning behind them.",
+          "new_queries": [
+            "What does the narrator suggest Nastenka do about the lodger's silence?",
+            "What reasons does the narrator give to Nastenka for writing to the lodger?",
+            "How does Nastenka respond to the narrator's suggestion about the lodger's silence?"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide clear evidence of what the narrator convinces Nastenka to do regarding the lodger's silence or the specific grounds for his argument. The conversations hint at the narrator's suggestions but lack explicit details about the actions taken and the reasoning behind them.",
+          "new_queries": [
+            "What does the narrator specifically suggest Nastenka write in her letter to the lodger?",
+            "What reasons does the narrator give to Nastenka for contacting the lodger about his silence?",
+            "How does Nastenka react to the narrator's advice about writing to the lodger?"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide clear evidence of what the narrator convinces Nastenka to do regarding the lodger's silence or the specific grounds for his argument. The passages contain dialogue but lack explicit details about the narrator's convincing actions and reasoning.",
+          "new_queries": [
+            "What does the narrator specifically advise Nastenka to write in her letter to the lodger about his silence?",
+            "What arguments does the narrator use to persuade Nastenka to contact the lodger regarding his silence?",
+            "How does the narrator justify the need for Nastenka to write to the lodger about his lack of communication?"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_007",
+        "white_nights_second_night_025",
+        "white_nights_second_night_009",
+        "white_nights_second_night_024"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 25,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison of Nastenka's feelings for the lodger and the narrator. While there are expressions of her feelings, they lack explicit comparative statements or a direct analysis of how her feelings differ or relate to each other.",
+          "new_queries": [
+            "Nastenka's feelings for the lodger compared to her feelings for the narrator",
+            "Nastenka's emotional conflict between the lodger and the narrator",
+            "Nastenka's thoughts on love for the lodger versus the narrator"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison of Nastenka's feelings for the lodger and the narrator. While there are expressions of her feelings, they lack explicit comparative statements or a direct analysis of her emotional conflict between the two characters.",
+          "new_queries": [
+            "Nastenka's feelings for the lodger versus the narrator's feelings for her",
+            "Nastenka's emotional conflict comparing the lodger and the narrator",
+            "Nastenka's thoughts on love for the lodger and the narrator's love for her"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison of Nastenka's feelings for the lodger and the narrator. They contain emotional expressions but lack explicit statements or direct comparisons between her feelings for both characters.",
+          "new_queries": [
+            "Nastenka's feelings for the lodger compared to the narrator's feelings for her",
+            "Nastenka's emotional conflict between her love for the lodger and the narrator",
+            "Nastenka's thoughts on her love for the lodger versus her feelings for the narrator"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_third_night_008",
+        "white_nights_second_night_024",
+        "white_nights_second_night_025",
+        "white_nights_second_night_026",
+        "white_nights_third_night_004",
+        "white_nights_fourth_night_009"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "INTERPRETIVE",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 31,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not clearly indicate whether the narrator's happiness is presented as secure or if the narrative signals that it won't last. There is ambiguity regarding the narrator's emotional state and the future of his happiness.",
+          "new_queries": [
+            "narrator's feelings about happiness after Nastenka's attention",
+            "does the narrator express doubt about lasting happiness with Nastenka",
+            "how does the narrative foreshadow the narrator's happiness"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages provide some context about the narrator's feelings and interactions with Nastenka, but they do not clearly indicate whether the narrator's happiness is presented as secure or if the narrative signals that it won't last. More explicit evidence regarding the narrator's perception of the stability of his happiness is needed.",
+          "new_queries": [
+            "narrator's declaration of happiness after Nastenka's attention and its implications",
+            "how does the narrative foreshadow the narrator's happiness after Nastenka turns to him",
+            "evidence of narrator's doubts about lasting happiness with Nastenka"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages provide some context about the narrator's feelings and Nastenka's situation, but they do not clearly indicate whether the narrator's happiness is presented as secure or if the narrative signals that it won't last. There is a lack of explicit evidence regarding the narrator's emotional state at the moment of declaring happiness and any foreshadowing of its impermanence.",
+          "new_queries": [
+            "narrator's declaration of happiness and foreshadowing of future events",
+            "how does the narrator's happiness after Nastenka's attention change throughout the story",
+            "evidence of the narrator's uncertainty about lasting happiness with Nastenka"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_033",
+        "white_nights_second_night_032",
+        "white_nights_second_night_016",
+        "white_nights_morning_004",
+        "white_nights_third_night_004"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 31,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison between the narrator's real happiness with Nastenka in the Fourth Night and his solitary fantasy life described on the Second Night. Key details about the nature of his happiness and the specifics of his fantasy life are missing.",
+          "new_queries": [
+            "narrator's real happiness with Nastenka Fourth Night description",
+            "solitary fantasy life Second Night details",
+            "comparison of narrator's happiness and fantasy life in Fourth and Second Nights"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison between the narrator's real happiness with Nastenka in the Fourth Night and his solitary fantasy life described on the Second Night. Key details and explicit contrasts are missing.",
+          "new_queries": [
+            "narrator's happiness with Nastenka Fourth Night details",
+            "solitary fantasy life Second Night comparison with real happiness",
+            "how does the narrator feel about Nastenka Fourth Night vs Second Night"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear comparison between the narrator's real happiness with Nastenka in the Fourth Night and his solitary fantasy life in the Second Night. Key details and explicit contrasts are missing.",
+          "new_queries": [
+            "narrator's real happiness with Nastenka Fourth Night vs solitary fantasy life Second Night",
+            "Fourth Night description of happiness with Nastenka compared to Second Night",
+            "how does the narrator describe his happiness with Nastenka in Fourth Night",
+            "details of narrator's solitary fantasy life in Second Night"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_012",
+        "white_nights_second_night_016",
+        "white_nights_second_night_009",
+        "white_nights_morning_004",
+        "white_nights_third_night_002"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "EVENT",
+      "retried": true,
+      "attempts": 3,
+      "union_size": 35,
+      "checks": [
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear resolution for the narrator and Nastenka, nor do they explicitly describe his response to her final letter.",
+          "new_queries": [
+            "narrator's response to Nastenka's final letter",
+            "resolution of the story for the narrator and Nastenka",
+            "how does Nastenka's situation conclude with the narrator"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear resolution for the narrator and Nastenka or detail his response to her final letter.",
+          "new_queries": [
+            "narrator's final thoughts on Nastenka's letter",
+            "how does the narrator react to Nastenka's last letter",
+            "resolution of the narrator and Nastenka's relationship"
+          ]
+        },
+        {
+          "verdict": "INSUFFICIENT",
+          "reason": "The retrieved passages do not provide a clear resolution for the narrator and Nastenka, nor do they explicitly describe the narrator's response to her final letter.",
+          "new_queries": [
+            "narrator's final meeting with Nastenka and her last letter",
+            "how does the narrator feel about Nastenka's final letter",
+            "Nastenka's last letter to the narrator and his reaction"
+          ]
+        }
+      ],
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_second_night_037",
+        "white_nights_fourth_night_003",
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_007",
+        "white_nights_third_night_010"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

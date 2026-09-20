@@ -1,0 +1,3 @@
+[
+  "8 attempts total, including a worked example embedding this exact chunk's text near-verbatim with the correct labeling spelled out -- still predicts 'Nastenka' only, missing the Dreamer's 'A compact!...I agree to anything' and 'I swear' lines. Confirmed genuine model capability limit (gpt-4o-mini) on this specific chunk's structure, not a prompt-wording issue. Accepted as residual for the LOCAL arm."
+]

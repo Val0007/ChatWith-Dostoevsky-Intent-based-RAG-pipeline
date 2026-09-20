@@ -1,0 +1,175 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "factual",
+      "chosen_method": "bm25",
+      "reason": "The question specifically asks about a plot fact regarding the narrator's first encounter with Nastenka, which is likely to include specific wording or phrases from the text.",
+      "retrieved": [
+        "white_nights_second_night_006",
+        "white_nights_third_night_004",
+        "white_nights_second_night_034",
+        "white_nights_third_night_002",
+        "white_nights_second_night_005",
+        "white_nights_fourth_night_015"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "character",
+      "chosen_method": "full_v2",
+      "reason": "This question requires an understanding of the narrator's life context and emotional state, which is best answered by examining passages with surrounding context to capture the complexity of his experiences.",
+      "retrieved": [
+        "white_nights_second_night_018",
+        "white_nights_first_night_007",
+        "white_nights_second_night_005",
+        "white_nights_second_night_019",
+        "white_nights_second_night_021",
+        "white_nights_second_night_010"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "motivation",
+      "chosen_method": "judge",
+      "reason": "This question requires an understanding of character motivations and the nuances of their relationship, which necessitates a deeper reading comprehension beyond surface-level text.",
+      "retrieved": [
+        "white_nights_fourth_night_009",
+        "white_nights_fourth_night_006",
+        "white_nights_fourth_night_011",
+        "white_nights_fourth_night_004",
+        "white_nights_first_night_016",
+        "white_nights_second_night_036"
+      ],
+      "hit": true,
+      "rank": 5
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "factual",
+      "chosen_method": "bm25",
+      "reason": "The question specifically asks for details about Nastenka's living situation and a promise made by the lodger, which likely includes specific names and phrases that can be found verbatim in the text.",
+      "retrieved": [
+        "white_nights_second_night_032",
+        "white_nights_second_night_031",
+        "white_nights_second_night_025",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_second_night_036"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "interpretive",
+      "chosen_method": "judge",
+      "reason": "This question requires an evaluative judgment about the narrator's perspective and the thematic implications of desire, making the judge method ideal for nuanced comprehension.",
+      "retrieved": [
+        "white_nights_second_night_014",
+        "white_nights_second_night_020",
+        "white_nights_second_night_019",
+        "white_nights_second_night_015",
+        "white_nights_second_night_005",
+        "white_nights_third_night_002"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "evaluation",
+      "chosen_method": "judge",
+      "reason": "This question requires an understanding of the narrator's motivations and the nuances of their argument, making a deeper reading comprehension necessary.",
+      "retrieved": [
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_034",
+        "white_nights_second_night_033",
+        "white_nights_fourth_night_002",
+        "white_nights_fourth_night_004",
+        "white_nights_fourth_night_012"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "comparative",
+      "chosen_method": "narrative",
+      "reason": "This question requires evidence from multiple scenes to explore Nastenka's feelings and comparisons over time, making a narrative approach that diversifies across scenes the best choice.",
+      "retrieved": [
+        "white_nights_third_night_008",
+        "white_nights_third_night_002",
+        "white_nights_fourth_night_002",
+        "white_nights_third_night_003",
+        "white_nights_fourth_night_003",
+        "white_nights_third_night_004"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "evaluation",
+      "chosen_method": "judge",
+      "reason": "This question requires an evaluative reading of the narrator's declaration and its implications within the narrative, making the judge method ideal for understanding the complexity of the character's emotions and the narrative's treatment of happiness.",
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_018",
+        "white_nights_fourth_night_011",
+        "white_nights_morning_004",
+        "white_nights_second_night_017",
+        "white_nights_fourth_night_014"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "comparative",
+      "chosen_method": "narrative",
+      "reason": "This question requires evidence from multiple scenes to compare the narrator's experiences and development over time, making a narrative approach ideal.",
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_018",
+        "white_nights_second_night_019",
+        "white_nights_second_night_015",
+        "white_nights_fourth_night_014",
+        "white_nights_morning_004"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "development",
+      "chosen_method": "full_v2",
+      "reason": "This question requires understanding the complex resolution of the narrator's relationship with Nastenka, which involves multiple scenes and contextual nuances that are best captured with surrounding context.",
+      "retrieved": [
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_033",
+        "white_nights_second_night_036",
+        "white_nights_fourth_night_003",
+        "white_nights_fourth_night_002",
+        "white_nights_fourth_night_011"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

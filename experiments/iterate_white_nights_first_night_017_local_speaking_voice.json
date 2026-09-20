@@ -1,0 +1,49 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "trust",
+        "secrets",
+        "friendship"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "trust",
+        "secrets",
+        "romance"
+      ]
+    }
+  }
+]

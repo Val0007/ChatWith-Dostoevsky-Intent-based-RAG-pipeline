@@ -1,0 +1,123 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "solitude"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "solitude"
+      ]
+    }
+  },
+  {
+    "attempt": 3,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "solitude"
+      ]
+    }
+  },
+  {
+    "attempt": 4,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection",
+        "isolation"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "madman perception"
+      ]
+    }
+  },
+  {
+    "attempt": 5,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection",
+        "isolation"
+      ],
+      "local_motifs": [
+        "timid prayer",
+        "sisterly words",
+        "brotherly compassion"
+      ]
+    }
+  }
+]

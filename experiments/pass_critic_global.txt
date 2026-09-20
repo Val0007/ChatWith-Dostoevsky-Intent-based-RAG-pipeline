@@ -1,0 +1,23 @@
+PATTERN 1: Over-application of "undermines"
+DIAGNOSIS: The model frequently predicts "undermines" in passages where the gold standard indicates "unclear" or "complicates." This suggests that the model is over-applying the "undermines" label, possibly due to the emphasis on self-deception and escapism in the current prompt. The prompt states, "Reserve 'undermines' for passages where the SUBSTITUTION itself is the point," which may lead the model to default to "undermines" when any form of imagination or fantasy is present, even if it is not the central theme.
+AFFECTED CHUNKS: white_nights_first_night_001, white_nights_first_night_004, white_nights_first_night_005, white_nights_first_night_006, white_nights_second_night_011
+PATCH:
+old: "Reserve 'undermines' for passages where the SUBSTITUTION itself is the point"
+new: "Reserve 'undermines' for passages where the SUBSTITUTION itself is the central theme and clearly exposes self-deception or escapism"
+REGRESSION RISK: Low, as this change narrows the criteria for "undermines" without affecting other labels.
+
+PATTERN 2: Confusion between "complicates" and "undermines"
+DIAGNOSIS: The model often confuses "complicates" with "undermines," particularly in passages where both genuine feelings and elements of fantasy or imagination are present. The prompt's guidance on "complicates" states, "BOTH halves must be present," which might not be sufficiently clear in distinguishing when a passage should be tagged as "complicates" rather than "undermines."
+AFFECTED CHUNKS: white_nights_first_night_002, white_nights_first_night_003, white_nights_first_night_006, white_nights_second_night_006, white_nights_second_night_008
+PATCH:
+old: "BOTH halves must be present."
+new: "BOTH genuine feelings and subtle questioning must be present, without the passage primarily exposing self-deception."
+REGRESSION RISK: Medium, as this change could lead to under-tagging of "complicates" if the distinction is not clear enough.
+
+PATTERN 3: Misclassification of "unclear" as "complicates"
+DIAGNOSIS: The model sometimes predicts "complicates" for passages that the gold standard tags as "unclear." This may be due to the model interpreting any presence of introspection or emotional complexity as "complicates," even when the passage does not advance an evaluated idea. The prompt states, "Do NOT force a stance and do NOT invent a theme to justify one," which might not be emphasized enough.
+AFFECTED CHUNKS: white_nights_first_night_007, white_nights_first_night_011, white_nights_second_night_002, white_nights_second_night_004, white_nights_second_night_009
+PATCH:
+old: "Do NOT force a stance and do NOT invent a theme to justify one."
+new: "Do NOT force a stance and do NOT invent a theme to justify one; 'complicates' requires a clear, evaluated idea being questioned."
+REGRESSION RISK: Low, as this change reinforces the existing instruction without altering the criteria for other labels.

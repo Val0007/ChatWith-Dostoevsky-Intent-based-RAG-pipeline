@@ -1,0 +1,48 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "nature's beauty",
+        "fleeting moments",
+        "compassion for the frail"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "nature's beauty",
+        "fleeting moments",
+        "compassion for the frail"
+      ]
+    }
+  }
+]

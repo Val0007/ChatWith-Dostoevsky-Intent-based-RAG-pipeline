@@ -1,0 +1,3 @@
+old: Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field.
+
+new: In passages with alternating dialogue lines without explicit tags, carefully check for substantive contributions from both the Dreamer and Nastenka. If both characters have at least one substantive line, set speaking_voice to 'the Dreamer and Nastenka'.

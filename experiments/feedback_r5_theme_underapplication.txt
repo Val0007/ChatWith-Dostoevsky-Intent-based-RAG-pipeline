@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The pattern of errors is due to the lack of explicit definitions for the themes 'self-deception' and 'the-dreamer' in the CONTEXT_USER_TEMPLATE. The tagger is likely underapplying these themes because it does not have clear guidance on what constitutes 'self-deception' or 'the-dreamer', unlike other themes which have specific one-line definitions. This absence of definitions leads to uncertainty in identifying these themes in the passages.
+
+PATCH:
+target: CONTEXT_USER_TEMPLATE
+old: ALLOWED THEMES: isolation, the-dreamer, unrequited-longing, ephemeral-connection, self-deception, alienation-from-society, the-city, pride-and-humiliation, active-love, faith-vs-doubt, suffering-as-redemption, guilt, rational-egoism, free-will-vs-determinism, confession, innocent-suffering, moral-transgression
+new: ALLOWED THEMES: isolation, the-dreamer (a character who lives in fantasy or imagination), unrequited-longing, ephemeral-connection, self-deception (believing in a false or imagined reality), alienation-from-society, the-city, pride-and-humiliation, active-love, faith-vs-doubt, suffering-as-redemption, guilt, rational-egoism, free-will-vs-determinism, confession, innocent-suffering, moral-transgression
+
+REGRESSION RISK:
+There is a potential risk that the added definitions might lead to overapplication of these themes if the tagger begins to apply them too broadly. However, given the current underapplication, this risk is minimal and can be monitored.

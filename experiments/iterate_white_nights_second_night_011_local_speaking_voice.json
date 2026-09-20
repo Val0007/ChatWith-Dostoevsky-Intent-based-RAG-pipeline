@@ -1,0 +1,44 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "playful flight of fancy",
+        "canvas like a spider's web",
+        "sad and empty soul"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "isolation"
+      ],
+      "local_motifs": [
+        "imagination",
+        "solitude",
+        "dreamlike state"
+      ]
+    }
+  }
+]

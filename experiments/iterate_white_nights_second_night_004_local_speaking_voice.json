@@ -1,0 +1,95 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "dreaming of a Chinese Prince",
+        "absurd history",
+        "strange nooks in Petersburg"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "dreaming of a Chinese Prince",
+        "introduction of Nastenka",
+        "absurd history"
+      ]
+    }
+  },
+  {
+    "attempt": 3,
+    "pred": "Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "dreaming of a Chinese Prince",
+        "introduction of Nastenka",
+        "absurd history"
+      ]
+    }
+  },
+  {
+    "attempt": 4,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "Chinese Prince",
+        "absurd history",
+        "strange nooks in Petersburg"
+      ]
+    }
+  }
+]

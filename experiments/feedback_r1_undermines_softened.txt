@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The pattern of errors stems from the tagger's misinterpretation of the "undermines" label, particularly in passages where the Dreamer's fantasies are presented in a seemingly benign or comic manner. The SYSTEM_PROMPT defines "undermines" as exposing the Dreamer's self-deception or escapism, but the examples provided in the prompt focus on more overtly grandiose or self-glorifying fantasies. The tagger fails to recognize subtler instances of self-deception, such as personifying buildings or fantasizing about idealized relationships, as fitting the "undermines" label. The phrase "rapturous, self-glorifying fantasy usually belongs HERE" may lead the tagger to overlook less grandiose but still self-deceptive fantasies.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "Rapturous, self-glorifying fantasy usually belongs HERE, not in 'complicates'."
+new: "Rapturous, self-glorifying fantasy usually belongs HERE, not in 'complicates'. This includes subtler self-deceptions, such as imagined relationships with strangers or inanimate objects."
+
+REGRESSION RISK:
+There is a risk that the tagger might now over-apply "undermines" to any passage with fantasy elements, even when the book does not expose them as self-deceptive. Care must be taken to ensure that the passage truly fits the criteria of exposing fantasy as a flight from life.

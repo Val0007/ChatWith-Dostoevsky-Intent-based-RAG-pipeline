@@ -1,0 +1,13 @@
+PATTERN: Misattribution of Speaking Voice in Dialogues
+
+AFFECTED: 2 chunks
+
+FAILURE MECHANISM: The system incorrectly attributes the speaking voice to only one character when both the Dreamer and Nastenka are substantively speaking in the passage.
+
+PROMPT LANGUAGE: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field."
+
+WHY THIS CAUSES THE FAILURE: The prompt provides guidance on recognizing exchanges between the Dreamer and Nastenka, but the system fails to apply this rule consistently, possibly due to the complexity of alternating dialogue without explicit tags.
+
+PROPOSED FIX: Emphasize the importance of identifying substantive exchanges between both characters, even in the absence of explicit dialogue tags, and reinforce the rule of alternating lines in untagged dialogue runs.
+
+DRAFT INSTRUCTION: "In passages with alternating dialogue lines without explicit tags, carefully check for substantive contributions from both the Dreamer and Nastenka. If both characters have at least one substantive line, set speaking_voice to 'the Dreamer and Nastenka'."

@@ -1,0 +1,231 @@
+<!-- White Nights Tagger Study — 11-phase experimental plan -->
+<title>White Nights Tagger Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #F4F5F8; --surface: #FFFFFF; --surface-2: #FAFBFD;
+    --ink: #14161F; --muted: #565C6C; --faint: #878D9C; --hair: #E4E6EE;
+    --amber: #A9761A; --amber-line: #C89A3C; --amber-soft: #F5EBD3;
+    --steel: #37536B; --steel-soft: #E6ECF2;
+    --up: #2E7D5B; --down: #B4472E;
+    --shadow: 0 1px 2px rgba(20,22,31,.04), 0 8px 28px rgba(20,22,31,.05);
+    --measure: 68ch; --page: 960px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0D1018; --surface: #151925; --surface-2: #1A1F2D;
+      --ink: #E9EBF2; --muted: #9EA4B5; --faint: #6B7285; --hair: #272D3C;
+      --amber: #E2AE4E; --amber-line: #B98C34; --amber-soft: #2A2416;
+      --steel: #86A6C6; --steel-soft: #1A2534;
+      --up: #5CBE90; --down: #E08163;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1018; --surface: #151925; --surface-2: #1A1F2D;
+    --ink: #E9EBF2; --muted: #9EA4B5; --faint: #6B7285; --hair: #272D3C;
+    --amber: #E2AE4E; --amber-line: #B98C34; --amber-soft: #2A2416;
+    --steel: #86A6C6; --steel-soft: #1A2534;
+    --up: #5CBE90; --down: #E08163;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 16px; line-height: 1.62;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: var(--page); margin: 0 auto; padding: clamp(2rem,5vw,4.5rem) clamp(1.1rem,4vw,2.4rem) 5rem; }
+  .prose { max-width: var(--measure); }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: .72rem; font-weight: 500;
+    letter-spacing: .18em; text-transform: uppercase; color: var(--amber); }
+  h1 { font-family: "Spectral", Georgia, serif; font-weight: 600; font-size: clamp(2.3rem,6vw,3.4rem);
+    line-height: 1.04; letter-spacing: -.01em; text-wrap: balance; margin: .5rem 0 .1rem; }
+  .thesis { font-family: "Spectral", Georgia, serif; font-size: clamp(1.15rem,2.4vw,1.4rem);
+    font-style: italic; font-weight: 400; color: var(--muted); max-width: 44ch; line-height: 1.4; margin: .9rem 0 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: .5rem .9rem; font-family: "IBM Plex Mono", monospace;
+    font-size: .74rem; color: var(--faint); margin-top: 1.6rem; }
+  .meta .dot { color: var(--amber-line); }
+  header { border-bottom: 1px solid var(--hair); padding-bottom: 2rem; margin-bottom: 2.6rem; }
+  section { margin-top: 3rem; }
+  h2 { font-family: "Spectral", Georgia, serif; font-weight: 600; font-size: clamp(1.4rem,3vw,1.75rem);
+    letter-spacing: -.01em; text-wrap: balance; margin: 0 0 .2rem; }
+  .lede { color: var(--muted); margin: .35rem 0 1.4rem; max-width: var(--measure); }
+  p { margin: 0 0 1rem; } strong { font-weight: 600; }
+  code { font-family: "IBM Plex Mono", monospace; font-size: .86em; background: var(--surface-2);
+    border: 1px solid var(--hair); border-radius: 5px; padding: .05rem .32rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .scroll table { min-width: 640px; }
+  th, td { text-align: left; padding: .62rem .8rem; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  thead th { font-family: "IBM Plex Mono", monospace; font-size: .68rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .1em; color: var(--faint); }
+  tbody tr:last-child td { border-bottom: none; }
+  .cond { font-weight: 600; white-space: nowrap; }
+  .card { background: var(--surface); border: 1px solid var(--hair); border-radius: 12px;
+    box-shadow: var(--shadow); padding: 1.05rem 1.2rem; }
+  .up { color: var(--up); font-weight: 600; } .down { color: var(--down); font-weight: 600; }
+  .flat { color: var(--faint); } .fill { color: var(--faint); font-family: "IBM Plex Mono", monospace; }
+
+  .known { display: grid; gap: .7rem; margin-top: 1.1rem; }
+  .known .row { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; align-items: baseline; }
+  .known .fid { font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--amber);
+    border-right: 2px solid var(--amber-line); padding-right: .8rem; }
+  .known .fb { color: var(--muted); font-size: .95rem; }
+  .known .fb b { color: var(--ink); }
+
+  .phase { display: grid; grid-template-columns: 3rem 1fr; gap: 0 1.1rem; padding: 1.35rem 0; border-bottom: 1px solid var(--hair); }
+  .phase:last-child { border-bottom: none; }
+  .phase .pn { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 1rem; color: var(--amber);
+    border-right: 2px solid var(--amber-line); padding-right: .85rem; line-height: 1.5; }
+  .phase h3 { margin: 0 0 .3rem; font-size: 1.1rem; font-weight: 600; letter-spacing: -.01em; }
+  .phase p { margin: 0 0 .5rem; color: var(--muted); font-size: .95rem; }
+  .phase .tells { font-size: .9rem; background: var(--amber-soft); color: var(--ink); border-radius: 7px;
+    padding: .4rem .7rem; display: inline-block; }
+  .phase .tells b { font-family: "IBM Plex Mono", monospace; font-size: .62rem; text-transform: uppercase;
+    letter-spacing: .09em; color: var(--amber); margin-right: .4rem; }
+  .prelim { font-family: "IBM Plex Mono", monospace; font-size: .62rem; text-transform: uppercase;
+    letter-spacing: .08em; color: var(--steel); background: var(--steel-soft); border-radius: 5px;
+    padding: .15rem .45rem; margin-left: .5rem; vertical-align: middle; }
+
+  .arrows { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: .7rem; margin-top: 1rem; }
+  .arrows .a { background: var(--surface); border: 1px solid var(--hair); border-radius: 10px; padding: .8rem .9rem; }
+  .arrows .a .f { font-family: "IBM Plex Mono", monospace; font-size: .78rem; color: var(--muted); }
+  .arrows .a .v { font-size: 1.3rem; font-weight: 600; margin-top: .2rem; }
+
+  blockquote { margin: 1.2rem 0 0; padding: .9rem 1.1rem; border-left: 3px solid var(--amber-line);
+    background: var(--surface-2); border-radius: 0 8px 8px 0; font-family: "Spectral", Georgia, serif;
+    font-style: italic; font-size: 1.08rem; color: var(--ink); }
+  .foot { margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid var(--hair); color: var(--faint);
+    font-family: "IBM Plex Mono", monospace; font-size: .74rem; }
+  @media (max-width: 620px) { .phase { grid-template-columns: 1fr; gap: .3rem; }
+    .phase .pn { border-right: none; border-bottom: 2px solid var(--amber-line); padding: 0 0 .3rem; width: 2rem; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Study · Metadata Tagging</div>
+    <h1>White Nights Tagger Study</h1>
+    <p class="thesis">Find out <em>why</em> context helps literary tagging — field by field — before building retrieval on top of it.</p>
+    <div class="meta">
+      <span>11 phases · ablation-driven</span><span class="dot">·</span>
+      <span>builds on findings F1–F5</span><span class="dot">·</span>
+      <span>gate for V2 retrieval</span>
+    </div>
+  </header>
+
+  <section class="prose" style="margin-top:0">
+    <h2>Why this comes first</h2>
+    <p class="lede">Retrieval built on wobbly tags just launders the wobble. We already have hints that the tagging story is subtler than "context helps" — this study turns those hints into mechanism.</p>
+    <div class="known">
+      <div class="row"><div class="fid">F1</div><div class="fb">context-aware beat local tagging on <b>narrative_relation</b> — <b>but confounded prompt + context together</b>.</div></div>
+      <div class="row"><div class="fid">F5</div><div class="fb"><b>The correction:</b> holding the prompt fixed, accuracy was flat across all context arms. The <b>prompt</b> drove correctness; context data mainly bought <b>stability</b> — and single-source context sometimes <b>misled</b>.</div></div>
+      <div class="row"><div class="fid">F2</div><div class="fb">fields vary <b>within</b> a scene (speaker uniform 41%, narrative_relation only 19%) — so a scene card is the wrong granularity for chunk-level fields.</div></div>
+      <div class="row"><div class="fid">F3</div><div class="fb">theme collapse to <code>unrequited-longing</code> is <b>localized</b> to emotionally-saturated chapters (Fourth Night), not global.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The instrument — per-field ablation</h2>
+    <p class="lede">Four context arms, scored <strong>per field, never as one number</strong>. This table is the study's spine (Phase 1 + Phase 11).</p>
+    <div class="scroll card" style="padding:.4rem .3rem">
+      <table>
+        <thead><tr><th>Condition</th><th>speaker / voice</th><th>speaker_relation</th><th>themes</th><th>narrative_relation</th></tr></thead>
+        <tbody>
+          <tr><td class="cond">A · Local (±chunk)</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td></tr>
+          <tr><td class="cond">B · + scenes</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td></tr>
+          <tr><td class="cond">C · + global map</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td></tr>
+          <tr><td class="cond">D · both</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td><td class="fill">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede" style="margin-top:1rem">Expected <em>shape</em> of the result (the finding, not "tagging got better"):</p>
+    <div class="arrows">
+      <div class="a"><div class="f">speaker / voice</div><div class="v down">↓</div></div>
+      <div class="a"><div class="f">speaker_relation</div><div class="v down">↓</div></div>
+      <div class="a"><div class="f">themes</div><div class="v flat">=</div></div>
+      <div class="a"><div class="f">narrative_relation</div><div class="v up">↑↑</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The eleven phases</h2>
+    <p class="lede">Measure first, then change the schema, then interrogate each field, then fix prompts, then control for confounds.</p>
+
+    <div class="phase"><div class="pn">01</div><div>
+      <h3>Context ablation <span class="prelim">preliminary: F1, F5</span></h3>
+      <p>Run the four arms (A local · B +scenes · C +global · D both). C is the one that matters most for <code>narrative_relation</code>.</p>
+      <span class="tells"><b>tells you</b> whether context improves a field, or improves one while degrading another.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">02</div><div>
+      <h3>Don't remove <code>speaker</code> — split it</h3>
+      <p>Replace the single field with <code>narrating_voice</code> + <code>speaking_voice</code> (allow <code>speaking_voice = null</code> for pure narration). Nested narration stops being forced into one label; retire the muddled <code>"the Dreamer and Nastenka"</code>. Re-run the ablation.</p>
+      <span class="tells"><b>tells you</b> whether the speaker failure was a <em>schema</em> problem (regression disappears) or still prompt/context.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">03</div><div>
+      <h3>Separate local fields from global ones</h3>
+      <p>Stop making six fields share one prompt. A <strong>local tagger</strong> (voice, characters, speaker_relation, themes, motifs) sees TARGET + immediate context; a <strong>context tagger</strong> (narrative_relation, maybe a contextual-interpretation field) sees TARGET + global map + scene. Follows directly from F1.</p>
+      <span class="tells"><b>tells you</b> whether decoupling removes cross-field contamination.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">04</div><div>
+      <h3>Fix themes separately <span class="prelim">preliminary: F3</span></h3>
+      <p>Local vs +scenes vs +global vs all. Measure <strong>precision</strong>, <strong>recall</strong>, and <strong>over-application</strong> per theme — especially <code>unrequited-longing</code> as a global attractor: does context raise it while precision drops?</p>
+      <span class="tells"><b>tells you</b> whether to keep the global map <em>out</em> of the theme classifier.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">05</div><div>
+      <h3>Test <code>narrative_relation</code> at scene level <span class="prelim">preliminary: F2</span></h3>
+      <p>Measure within-scene agreement (modal relation / chunks) across all scenes. High agreement ⇒ it's a scene property with chunks inheriting <code>scene.narrative_relation</code>. F2 hints it's only 19% uniform, so don't assume — measure the distribution.</p>
+      <span class="tells"><b>tells you</b> whether to lift the field up to the scene (a structural win) or keep it per-chunk.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">06</div><div>
+      <h3>A "no theme" discipline test</h3>
+      <p>Build a set of transitions, descriptions, plot-mechanics, mundane dialogue. Measure the <strong>false-theme rate</strong> — the model should confidently return <code>[]</code>. Context risks making every passage feel like it must carry a major theme.</p>
+      <span class="tells"><b>tells you</b> whether context inflates spurious tagging on empty passages.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">07</div><div>
+      <h3>Test <code>speaker_relation</code> separately <span class="prelim">preliminary: F2</span></h3>
+      <p>Balanced gold across asserts / doubts / rejects / explores; compare arms. Watch <strong>explores %</strong> specifically — if it climbs with context (e.g. 18% → 31%), scene summaries are flattening stronger local stances.</p>
+      <span class="tells"><b>tells you</b> whether to keep speaker_relation strictly local.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">08</div><div>
+      <h3>Test stability <span class="prelim">preliminary: F5</span></h3>
+      <p>20–30 chunks × 3–5 runs; per-field agreement. You may find e.g. speaker 98% / narrative_relation 74% / themes 68%.</p>
+      <span class="tells"><b>tells you</b> if a field is intrinsically noisy — you can't "fix" noise with more context.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">09</div><div>
+      <h3>Then do the prompt fixes</h3>
+      <p>Only after the ablation. <strong>Speaker:</strong> distinguish narrating vs speaking vs reported speech. <strong>Themes:</strong> tag the TARGET's subject, never inherit from context; use context only to disambiguate. <strong>narrative_relation:</strong> an internal reasoning chain — (1) what proposition/feeling is in TARGET, (2) what the speaker does with it, (3) does TARGET itself establish the book's treatment, (4) if not, what does the global arc establish, (5) select — and never use target <em>mood</em> as evidence for <code>unresolved</code>.</p>
+      <span class="tells"><b>tells you</b> how much of each field is fixable by prompting alone.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">10</div><div>
+      <h3>Add the irrelevant-context control</h3>
+      <p>A fifth arm: TARGET + <strong>same-length unrelated White Nights text</strong>. Distinguishes improvement from <em>information</em> vs. improvement from <em>more tokens / richer prose</em>. Essential for any research claim.</p>
+      <span class="tells"><b>tells you</b> whether the effect is real information or prompt-length artifact.</span>
+    </div></div>
+
+    <div class="phase"><div class="pn">11</div><div>
+      <h3>Report field-specific improvement, not "tagging quality"</h3>
+      <p>Never a single "accuracy = 84%". Report the per-field arrows (local → context). That direction-vector <em>is</em> the finding.</p>
+      <span class="tells"><b>tells you</b> the actual result, instead of hiding it under an average.</span>
+    </div></div>
+  </section>
+
+  <section>
+    <h2>The finding we're building toward</h2>
+    <blockquote>Global context substantially improves narrative-level judgments but provides little benefit to locally determined attributes, and can introduce thematic contamination and speaker-attribution errors.</blockquote>
+    <p class="lede" style="margin-top:1.2rem">That is a real answer to <em>"how do you do metadata tagging well for literary works?"</em> — a mechanism, field by field — not "our context-aware tagger got better." Only after this do we return to retrieval (the <em>RAG Lab</em>) on tags we actually trust.</p>
+  </section>
+
+  <div class="foot">White Nights Tagger Study · 11-phase plan · sibling of the White Nights RAG Lab · gates V2 retrieval</div>
+</div>

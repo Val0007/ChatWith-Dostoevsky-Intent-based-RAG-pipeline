@@ -1,0 +1,41 @@
+PATTERN: Misattribution of Speaking Voice in Dialogues
+
+AFFECTED: 2 chunks
+
+FAILURE MECHANISM: The system incorrectly attributes the speaking voice to only one character when both the Dreamer and Nastenka are substantively speaking in the passage.
+
+PROMPT LANGUAGE: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field."
+
+WHY THIS CAUSES THE FAILURE: The prompt provides guidance on recognizing exchanges between the Dreamer and Nastenka, but the system fails to apply this rule consistently, possibly due to the complexity of alternating dialogue without explicit tags.
+
+PROPOSED FIX: Emphasize the importance of identifying substantive exchanges between both characters, even in the absence of explicit dialogue tags, and reinforce the rule of alternating lines in untagged dialogue runs.
+
+DRAFT INSTRUCTION: "In passages with alternating dialogue lines without explicit tags, carefully check for substantive contributions from both the Dreamer and Nastenka. If both characters have at least one substantive line, set speaking_voice to 'the Dreamer and Nastenka'."
+
+---
+
+PATTERN: Misclassification of Speaker Relation
+
+AFFECTED: 18 chunks
+
+FAILURE MECHANISM: The system frequently misclassifies the speaker_relation, often defaulting to "explores" or "doubts" when the passage context indicates "asserts."
+
+PROMPT LANGUAGE: "Most dialogue in which a speaker states a feeling with conviction is 'asserts'."
+
+WHY THIS CAUSES THE FAILURE: The prompt does not sufficiently emphasize the distinction between exploratory language and assertive declarations, leading to confusion in classification.
+
+PROPOSED FIX: Clarify the criteria for distinguishing between "asserts" and "explores," particularly in passages where the speaker expresses strong emotions or convictions.
+
+DRAFT INSTRUCTION: "When a speaker expresses a strong emotion or conviction, classify it as 'asserts' unless there is clear evidence of uncertainty or hypothetical exploration. Avoid defaulting to 'explores' unless the speaker is genuinely hypothesizing or wondering."
+
+---
+
+PATTERN: Residual Model Error in Speaker Relation
+
+AFFECTED: 2 chunks
+
+FAILURE MECHANISM: The system incorrectly classifies the speaker_relation despite clear indicators in the text.
+
+CLASSIFICATION: RESIDUAL MODEL ERROR — no clear prompt-level cause
+
+REASON: The current prompt provides adequate guidance for determining speaker_relation, but the model fails to apply it correctly in these instances. This suggests a need for model refinement rather than prompt adjustment.

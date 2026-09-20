@@ -1,0 +1,51 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "the-dreamer",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "hospitality",
+        "self-expression",
+        "long separation"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "the-dreamer"
+      ],
+      "local_motifs": [
+        "self-reflection",
+        "hospitality",
+        "storytelling"
+      ]
+    }
+  }
+]

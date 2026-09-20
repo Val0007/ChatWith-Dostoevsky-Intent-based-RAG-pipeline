@@ -1,0 +1,294 @@
+{
+  "k": 6,
+  "round": 3,
+  "n_scenes": 10,
+  "scene_field_weights": {
+    "summary": 0.4,
+    "developments": 0.25,
+    "characters": 0.15,
+    "consequences": 0.1,
+    "important_beliefs_or_feelings": 0.1
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "EVENT",
+      "top_scenes": [
+        "scene_19",
+        "scene_13",
+        "scene_11",
+        "scene_07",
+        "scene_08",
+        "scene_20",
+        "scene_22",
+        "scene_14",
+        "scene_23",
+        "scene_21"
+      ],
+      "new_from_scenes": 18,
+      "retrieved": [
+        "white_nights_second_night_037",
+        "white_nights_third_night_004",
+        "white_nights_fourth_night_015",
+        "white_nights_second_night_016",
+        "white_nights_second_night_009",
+        "white_nights_third_night_002"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "TEMPORAL",
+      "top_scenes": [
+        "scene_07",
+        "scene_19",
+        "scene_11",
+        "scene_12",
+        "scene_20",
+        "scene_23",
+        "scene_08",
+        "scene_18",
+        "scene_13",
+        "scene_21"
+      ],
+      "new_from_scenes": 16,
+      "retrieved": [
+        "white_nights_second_night_020",
+        "white_nights_second_night_009",
+        "white_nights_second_night_008",
+        "white_nights_second_night_004",
+        "white_nights_second_night_005",
+        "white_nights_second_night_019"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "MOTIVATION",
+      "top_scenes": [
+        "scene_20",
+        "scene_22",
+        "scene_19",
+        "scene_24",
+        "scene_17",
+        "scene_23",
+        "scene_18",
+        "scene_05",
+        "scene_25",
+        "scene_07"
+      ],
+      "new_from_scenes": 16,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_second_night_032",
+        "white_nights_second_night_033",
+        "white_nights_fourth_night_003",
+        "white_nights_first_night_016",
+        "white_nights_third_night_004"
+      ],
+      "hit": true,
+      "rank": 5
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "top_scenes": [
+        "scene_15",
+        "scene_14",
+        "scene_16",
+        "scene_13",
+        "scene_25",
+        "scene_19",
+        "scene_22",
+        "scene_26",
+        "scene_17",
+        "scene_24"
+      ],
+      "new_from_scenes": 14,
+      "retrieved": [
+        "white_nights_second_night_025",
+        "white_nights_second_night_032",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_second_night_029",
+        "white_nights_second_night_028"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "INTERPRETIVE",
+      "top_scenes": [
+        "scene_10",
+        "scene_07",
+        "scene_06",
+        "scene_05",
+        "scene_09",
+        "scene_04",
+        "scene_12",
+        "scene_11",
+        "scene_03",
+        "scene_19"
+      ],
+      "new_from_scenes": 16,
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_014",
+        "white_nights_second_night_012",
+        "white_nights_second_night_019",
+        "white_nights_second_night_005",
+        "white_nights_second_night_011"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "top_scenes": [
+        "scene_15",
+        "scene_22",
+        "scene_14",
+        "scene_20",
+        "scene_07",
+        "scene_17",
+        "scene_19",
+        "scene_16",
+        "scene_18",
+        "scene_24"
+      ],
+      "new_from_scenes": 19,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_025",
+        "white_nights_second_night_026",
+        "white_nights_second_night_007",
+        "white_nights_second_night_009"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "top_scenes": [
+        "scene_15",
+        "scene_19",
+        "scene_16",
+        "scene_22",
+        "scene_14",
+        "scene_20",
+        "scene_24",
+        "scene_23",
+        "scene_25",
+        "scene_18"
+      ],
+      "new_from_scenes": 15,
+      "retrieved": [
+        "white_nights_third_night_008",
+        "white_nights_second_night_025",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_third_night_004",
+        "white_nights_fourth_night_009"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "INTERPRETIVE",
+      "top_scenes": [
+        "scene_19",
+        "scene_18",
+        "scene_21",
+        "scene_26",
+        "scene_23",
+        "scene_20",
+        "scene_27",
+        "scene_11",
+        "scene_25",
+        "scene_17"
+      ],
+      "new_from_scenes": 18,
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_033",
+        "white_nights_third_night_004",
+        "white_nights_morning_004",
+        "white_nights_second_night_016",
+        "white_nights_second_night_032"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "top_scenes": [
+        "scene_19",
+        "scene_11",
+        "scene_27",
+        "scene_07",
+        "scene_08",
+        "scene_12",
+        "scene_21",
+        "scene_15",
+        "scene_26",
+        "scene_20"
+      ],
+      "new_from_scenes": 18,
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_016",
+        "white_nights_second_night_009",
+        "white_nights_morning_004",
+        "white_nights_second_night_012",
+        "white_nights_third_night_004"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "EVENT",
+      "top_scenes": [
+        "scene_22",
+        "scene_13",
+        "scene_17",
+        "scene_21",
+        "scene_18",
+        "scene_11",
+        "scene_08",
+        "scene_19",
+        "scene_12",
+        "scene_27"
+      ],
+      "new_from_scenes": 16,
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_037",
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_007",
+        "white_nights_third_night_010"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

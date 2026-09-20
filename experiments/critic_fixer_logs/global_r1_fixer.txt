@@ -1,0 +1,3 @@
+old: Reserve "undermines" for passages where the SUBSTITUTION itself is the point: the passage stages an imagined relationship AS IF it were real (a house treated as a "friend", a stranger's face read as a greeting) or shows the Dreamer explicitly retreating from real people into fantasy.
+
+new: Use "undermines" only when the passage explicitly critiques the Dreamer's imagination or introspection as a substitute for reality. Do not apply "undermines" merely because the passage involves imagination or reflection; these elements must be shown as self-deceptive or escapist in a way that substitutes for real connection.

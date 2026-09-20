@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The current prompt emphasizes that both speakers must have "real (more-than-a-bare-interjection) quoted lines" for the speaking_voice to be "the Dreamer and Nastenka." However, the Dreamer's lines, such as "I agree to anything, I am ready for anything" and "I swear," might be misinterpreted as interjections due to their brevity and the presence of phrases like "I cried," which could be perceived as diminishing their substantive content. The prompt needs to clarify that even brief but meaningful commitments or vows should count as substantive lines.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "a short but real reply from the other (a question, a challenge, a judgment — not just 'Yes!' or 'Well?')"
+new: "a short but real reply from the other (a question, a challenge, a judgment, a commitment, or a vow — not just 'Yes!' or 'Well?')"
+
+REGRESSION RISK:
+This change might lead to more passages being tagged as "the Dreamer and Nastenka" when the Dreamer makes brief but meaningful statements, potentially overestimating the Dreamer's contribution in some dialogues.

@@ -1,0 +1,15 @@
+PATTERN: Misidentification of Dual Speaking Voice
+
+AFFECTED: 3 chunks
+
+FAILURE MECHANISM: The system fails to correctly identify when both the Dreamer and Nastenka are speaking with substantive content, leading to incorrect attribution of the speaking_voice field.
+
+PROMPT LANGUAGE: "When the Dreamer is speaking in dialogue, OR reflecting/expressing his own feelings and opinions in his narration... speaking_voice is 'the Dreamer'."
+
+WHY THIS CAUSES THE FAILURE: The prompt emphasizes identifying substantive content from both speakers but may not sufficiently stress the need to recognize short but substantive exchanges as qualifying for dual attribution.
+
+PROPOSED FIX: Emphasize the importance of identifying even brief substantive exchanges between the Dreamer and Nastenka as qualifying for dual speaking_voice attribution.
+
+DRAFT INSTRUCTION: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field. Look for any real line from both speakers, regardless of length, to determine dual attribution."
+
+NOTE FROM ORCHESTRATOR: Your previous OLD string for this same pattern did not match the current prompt text verbatim -- it collapsed a line break that exists in the actual source. The current prompt wraps text across multiple lines at specific points; your OLD string must match those line breaks exactly, character for character, including where each line ends. Re-derive OLD directly by copying the exact substring from the CURRENT prompt shown to you in this message, including its real line breaks -- do not reformat or re-wrap it onto one line.

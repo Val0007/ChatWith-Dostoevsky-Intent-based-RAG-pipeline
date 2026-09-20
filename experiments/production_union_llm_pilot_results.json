@@ -1,0 +1,215 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "EVENT",
+      "alternatives": [
+        "In what way does the narrator encounter Nastenka for the first time?",
+        "What is the initial meeting between the narrator and Nastenka like?",
+        "Can you describe the circumstances of the narrator's first meeting with Nastenka?",
+        "What happens when the narrator first comes across Nastenka?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_009",
+        "white_nights_second_night_016",
+        "white_nights_fourth_night_015",
+        "white_nights_third_night_010",
+        "white_nights_third_night_005",
+        "white_nights_third_night_008"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "TEMPORAL",
+      "alternatives": [
+        "What is the narrator's depiction of his life in Petersburg prior to his encounter with Nastenka?",
+        "In what ways does the narrator characterize his existence in Petersburg before he meets Nastenka?",
+        "How does the narrator portray his experiences in Petersburg before he comes across Nastenka?",
+        "What insights does the narrator provide about his life in Petersburg before meeting Nastenka?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_009",
+        "white_nights_second_night_020",
+        "white_nights_second_night_005",
+        "white_nights_second_night_013",
+        "white_nights_second_night_008",
+        "white_nights_second_night_010"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "MOTIVATION",
+      "alternatives": [
+        "What is Nastenka's reasoning for asking the narrator to promise not to fall in love with her before their next meeting?",
+        "What motivates Nastenka to request that the narrator not develop feelings for her prior to their next encounter?",
+        "Why does Nastenka insist on the narrator's promise to avoid falling in love with her before they agree to see each other again?",
+        "What are Nastenka's intentions behind making the narrator promise not to love her before they meet again?"
+      ],
+      "retrieved": [
+        "white_nights_third_night_008",
+        "white_nights_fourth_night_006",
+        "white_nights_second_night_034",
+        "white_nights_second_night_033",
+        "white_nights_second_night_015",
+        "white_nights_fourth_night_005"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "alternatives": [
+        "How did Nastenka live with her grandmother, and what commitment did the lodger express before departing for Moscow?",
+        "Can you describe Nastenka's circumstances while living with her grandmother and the promise made by the lodger prior to his trip to Moscow?",
+        "What details can you provide about Nastenka's home life with her grandmother and the vow the lodger made before heading to Moscow?",
+        "What was the nature of Nastenka's relationship with her grandmother, and what did the lodger promise before he left for Moscow?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_025",
+        "white_nights_second_night_024",
+        "white_nights_second_night_026",
+        "white_nights_second_night_032",
+        "white_nights_second_night_029",
+        "white_nights_second_night_028"
+      ],
+      "hit": true,
+      "rank": 4
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "INTERPRETIVE",
+      "alternatives": [
+        "Does the book portray the narrator's assertion that \"the dreamer\" is \"superior to all desire\" and lives in fantasy as true wisdom, or does it challenge this idea?",
+        "In what way does the narrative address the claim that \"the dreamer\" desires nothing due to his superiority to all desire—does it affirm this as wisdom or critique it?",
+        "Is the statement about \"the dreamer\" being \"superior to all desire\" and living in fantasy depicted as authentic wisdom in the book, or is it undermined?",
+        "How does the text respond to the narrator's claim that \"the dreamer\" is free from desire and exists solely in fantasy—does it validate this perspective or question it?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_014",
+        "white_nights_second_night_012",
+        "white_nights_second_night_019",
+        "white_nights_second_night_005",
+        "white_nights_second_night_020"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "EVENT",
+      "alternatives": [
+        "How does the narrator persuade Nastenka regarding the lodger's ongoing silence, and what reasons does he provide for his argument?",
+        "In what way does the narrator influence Nastenka's decision about the lodger's silence, and what rationale does he use to support his viewpoint?",
+        "What actions does the narrator encourage Nastenka to take concerning the lodger's persistent silence, and what justifications does he offer?",
+        "What is the narrator's approach to convincing Nastenka about the lodger's silence, and what are the bases for his arguments?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_034",
+        "white_nights_third_night_006",
+        "white_nights_second_night_009",
+        "white_nights_second_night_007",
+        "white_nights_fourth_night_003",
+        "white_nights_second_night_025"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "alternatives": [
+        "In what ways does Nastenka differentiate her emotions for the lodger from those she has for the narrator?",
+        "What are Nastenka's feelings towards the lodger in relation to her feelings for the narrator?",
+        "How does Nastenka's affection for the lodger contrast with her affection for the narrator?",
+        "What comparisons can be made between Nastenka's feelings for the lodger and her feelings for the narrator?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_024",
+        "white_nights_second_night_025",
+        "white_nights_second_night_026",
+        "white_nights_third_night_008",
+        "white_nights_fourth_night_012",
+        "white_nights_second_night_028"
+      ],
+      "hit": true,
+      "rank": 4
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "INTERPRETIVE",
+      "alternatives": [
+        "Is the narrator's declaration of \"now I am happy\" after Nastenka's attention portrayed as a lasting happiness, or does the story suggest it is fleeting?",
+        "After Nastenka appears to turn to the narrator, does the phrase \"now I am happy\" indicate a stable happiness, or are there hints in the narrative that it may not endure?",
+        "How is the narrator's statement \"now I am happy\" interpreted in relation to Nastenka's actions—does it imply a permanent joy or foreshadow its temporary nature?",
+        "Does the narrative imply that the happiness expressed by the narrator with \"now I am happy\" following Nastenka's response is enduring, or does it suggest an impending change?"
+      ],
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_033",
+        "white_nights_second_night_032",
+        "white_nights_morning_004",
+        "white_nights_second_night_016",
+        "white_nights_third_night_004"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "COMPARATIVE_MULTI_HOP",
+      "alternatives": [
+        "In what ways is the narrator's fleeting happiness with Nastenka on the Fourth Night distinct from his isolated fantasy existence portrayed on the Second Night?",
+        "What contrasts can be drawn between the narrator's short-lived joy with Nastenka during the Fourth Night and his solitary daydreams discussed on the Second Night?",
+        "How is the narrator's momentary contentment with Nastenka in the Fourth Night different from the lonely fantasies he shared on the Second Night?",
+        "What are the differences between the narrator's temporary happiness with Nastenka in the Fourth Night and the solitary imaginative life he depicted on the Second Night?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_013",
+        "white_nights_second_night_016",
+        "white_nights_second_night_015",
+        "white_nights_second_night_009",
+        "white_nights_second_night_020",
+        "white_nights_second_night_010"
+      ],
+      "hit": true,
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "EVENT",
+      "alternatives": [
+        "What is the resolution of the story for both the narrator and Nastenka, and how does he react to her last letter?",
+        "In what way does the narrative conclude for the narrator and Nastenka, and what is his response to her concluding correspondence?",
+        "How does the narrator's relationship with Nastenka come to a close, and what are his feelings towards her final message?",
+        "What happens to the narrator and Nastenka by the end of the story, and how does he address her ultimate letter?"
+      ],
+      "retrieved": [
+        "white_nights_second_night_037",
+        "white_nights_second_night_034",
+        "white_nights_second_night_007",
+        "white_nights_third_night_008",
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_016"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

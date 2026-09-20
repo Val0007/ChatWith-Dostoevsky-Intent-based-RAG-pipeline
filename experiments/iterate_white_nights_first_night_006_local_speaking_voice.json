@@ -1,0 +1,46 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "rejects",
+      "narrative_relation": "undermines",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "moving to summer villas",
+        "feeling forgotten",
+        "friendly looks"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [],
+      "speaker_relation": "rejects",
+      "narrative_relation": "unresolved",
+      "canonical_themes": [
+        "isolation",
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "moving to summer villas",
+        "feeling forgotten",
+        "friendly looks"
+      ]
+    }
+  }
+]

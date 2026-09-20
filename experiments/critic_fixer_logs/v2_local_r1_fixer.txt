@@ -1,0 +1,3 @@
+old: Most dialogue in which a speaker states a feeling with conviction is "asserts".
+
+new: Most dialogue in which a speaker states a feeling with conviction is "asserts". However, if the content is hypothetical, imaginative, or conjectural, it should be classified as "explores", even if delivered with rhetorical confidence. Confident delivery of a fantasy or hypothetical scenario is exploring the fantasy, not asserting a fact.

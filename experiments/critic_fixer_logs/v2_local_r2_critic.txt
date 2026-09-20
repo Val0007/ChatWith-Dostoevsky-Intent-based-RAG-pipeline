@@ -1,0 +1,65 @@
+PATTERN: Misclassification of "explores" as "asserts"
+
+AFFECTED: 6 chunks
+
+FAILURE MECHANISM: The system is incorrectly labeling passages as "asserts" when they should be classified as "explores." This occurs when the content involves hypothetical, imaginative, or conjectural scenarios, which should be classified as "explores" rather than "asserts."
+
+PROMPT LANGUAGE: 
+- "Most dialogue in which a speaker states a feeling with conviction is 'asserts'."
+- "Do NOT judge this field from the passage's SUBJECT MATTER. A passage about fantasy, dreaming, or imagination is not automatically 'explores' — if the speaker states it as settled fact, with conviction, in a confident narrating or lecturing voice ('let me tell you...', 'he is...', 'I am a type!'), that is still 'asserts', even though the content itself concerns dreams or fantasy."
+
+WHY THIS CAUSES THE FAILURE: The current prompt language emphasizes conviction and confidence in delivery as indicators of "asserts," which may lead to misclassification when the content is inherently exploratory, such as when discussing dreams or hypothetical scenarios. The distinction between conviction in delivery and the exploratory nature of the content is not sufficiently clear.
+
+PROPOSED FIX: Clarify that "explores" should be used for passages where the content is hypothetical, imaginative, or conjectural, even if delivered with confidence. Emphasize that the nature of the content, rather than the tone of delivery, should guide the classification.
+
+DRAFT INSTRUCTION: 
+"Most dialogue in which a speaker states a feeling with conviction is 'asserts'. However, if the content is hypothetical, imaginative, or conjectural, classify it as 'explores' regardless of the confidence in delivery. Focus on the nature of the content to determine if it is exploratory, rather than the tone of delivery." 
+
+PATTERN: Misclassification of "doubts" as "explores"
+
+AFFECTED: 1 chunk
+
+FAILURE MECHANISM: The system is incorrectly labeling a passage as "explores" when it should be classified as "doubts." This occurs when the speaker expresses uncertainty or anxiety about a real fear, which should be classified as "doubts."
+
+PROMPT LANGUAGE: 
+- "Hedged uncertainty or ambivalence ('perhaps', 'I don't know', 'maybe I was mistaken') is 'doubts'."
+- "explores - turns it over, imagines, wonders, without committing."
+
+WHY THIS CAUSES THE FAILURE: The distinction between "doubts" and "explores" is not sufficiently emphasized, leading to confusion when a passage contains elements of both exploration and uncertainty. The prompt does not clearly differentiate between exploring hypothetical scenarios and expressing uncertainty about real fears.
+
+PROPOSED FIX: Emphasize the distinction between exploring hypothetical scenarios and expressing uncertainty about real fears. Clarify that "doubts" should be used when the speaker is uncertain or anxious about a real situation, even if the passage contains exploratory language.
+
+DRAFT INSTRUCTION: 
+"Use 'doubts' when the speaker expresses uncertainty or anxiety about a real situation, even if the passage contains exploratory language. Reserve 'explores' for passages where the speaker is turning over hypothetical scenarios without a stake in the outcome." 
+
+PATTERN: Misclassification of "the Dreamer and Nastenka" as "the Dreamer" or "Nastenka"
+
+AFFECTED: 5 chunks
+
+FAILURE MECHANISM: The system is incorrectly labeling passages as having a single speaking voice ("the Dreamer" or "Nastenka") when both characters are substantively speaking. This occurs when the system fails to recognize brief but substantive exchanges between the Dreamer and Nastenka.
+
+PROMPT LANGUAGE: 
+- "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field."
+
+WHY THIS CAUSES THE FAILURE: The prompt emphasizes the need to recognize substantive exchanges but may not provide enough guidance on identifying these exchanges, especially when they are brief or embedded within longer monologues.
+
+PROPOSED FIX: Reinforce the importance of identifying brief but substantive exchanges and provide additional guidance on recognizing these exchanges, even when they are embedded within longer monologues.
+
+DRAFT INSTRUCTION: 
+"Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field. Pay close attention to any real line from both speakers, even if embedded within longer monologues, to determine dual attribution." 
+
+PATTERN: Misclassification of "Nastenka" as "the Dreamer and Nastenka"
+
+AFFECTED: 1 chunk
+
+FAILURE MECHANISM: The system is incorrectly labeling a passage as having both "the Dreamer and Nastenka" as the speaking voice when only Nastenka is substantively speaking.
+
+PROMPT LANGUAGE: 
+- "When Nastenka is telling her own story or speaking in dialogue, her speaking_voice is 'Nastenka' — even though the Dreamer (the narrator) is the one relaying it on the page."
+
+WHY THIS CAUSES THE FAILURE: The prompt may not sufficiently emphasize the need to attribute the speaking voice to Nastenka alone when she is the only one substantively speaking, leading to over-attribution to both characters.
+
+PROPOSED FIX: Clarify that the speaking voice should be attributed to Nastenka alone when she is the only one substantively speaking, even if the Dreamer is present in the passage.
+
+DRAFT INSTRUCTION: 
+"When Nastenka is the only one substantively speaking, attribute the speaking_voice to 'Nastenka' alone, even if the Dreamer is present in the passage. Avoid over-attribution to both characters when only one is substantively speaking."

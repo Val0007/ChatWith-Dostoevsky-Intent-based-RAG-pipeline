@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The pattern of errors arises from the tagger misinterpreting plain, stated declarations as exploratory or hypothetical musings. The prompt's instruction for "explores" states: "Use it only for genuine wondering, imagining, or hypothesizing ('what if...', 'perhaps one day...')." However, the examples show that the tagger is incorrectly applying "explores" to passages where the speaker is making clear, unhedged declarations about their feelings or experiences. The confusion likely stems from the instruction that "explores" is "NOT the default," which may inadvertently suggest that any introspective or reflective passage should be tagged as "explores" unless it is explicitly hedged or uncertain.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "explores - turns it over, imagines, wonders, without committing"
+new: "explores - turns it over, imagines, wonders, without committing; do not use for plain, unhedged declarations of feeling or fact"
+
+REGRESSION RISK:
+This patch could potentially lead to under-tagging of genuine exploratory passages if the distinction between exploration and assertion is not clear. However, the risk is minimal as the patch clarifies rather than changes the criteria for "explores."

@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The current prompt does not sufficiently emphasize the need to evaluate each passage for substantive dialogue contributions from both characters, which may lead the model to overlook brief but meaningful exchanges. The existing instruction, "a long speech by one that gets a short but real reply from the other," is not explicit enough in guiding the model to count and evaluate each dialogue turn for substantive content.
+
+PATCH:
+target: SYSTEM_PROMPT
+old: "a long speech by one that gets a short but real reply from the other (a question, a challenge, a judgment — not just 'Yes!' or 'Well?') is still both of them."
+new: "a long speech by one that gets a short but real reply from the other (a question, a challenge, a judgment — not just 'Yes!' or 'Well?') is still both of them. Explicitly count and evaluate each dialogue turn for substantive content to determine if both voices are present."
+
+REGRESSION RISK:
+This change may lead to over-counting or misidentifying brief interjections as substantive content, potentially increasing false positives for dual speaking_voice tags.

@@ -1,0 +1,128 @@
+[
+  {
+    "attempt": 1,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [
+        "the girl",
+        "the obtrusive gentleman"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection"
+      ],
+      "local_motifs": [
+        "trembling with excitement",
+        "charming and dark",
+        "glimmer of a smile"
+      ]
+    }
+  },
+  {
+    "attempt": 2,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "explores",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection",
+        "isolation"
+      ],
+      "local_motifs": [
+        "charming and dark",
+        "trembling with excitement",
+        "glimmer of a smile"
+      ]
+    }
+  },
+  {
+    "attempt": 3,
+    "pred": "the Dreamer",
+    "gold": "the Dreamer and Nastenka",
+    "correct": false,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer",
+      "characters_present": [
+        "the girl"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "unclear",
+      "canonical_themes": [
+        "unrequited-longing"
+      ],
+      "local_motifs": [
+        "charming and dark",
+        "trembling with excitement",
+        "gleam of a smile"
+      ]
+    }
+  },
+  {
+    "attempt": 4,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection",
+        "isolation"
+      ],
+      "local_motifs": [
+        "charming and dark",
+        "trembling with excitement",
+        "gleam of a smile"
+      ]
+    }
+  },
+  {
+    "attempt": 5,
+    "pred": "the Dreamer and Nastenka",
+    "gold": "the Dreamer and Nastenka",
+    "correct": true,
+    "full_pred": {
+      "narrating_voice": "the Dreamer",
+      "speaking_voice": "the Dreamer and Nastenka",
+      "characters_present": [
+        "the Dreamer",
+        "Nastenka"
+      ],
+      "speaker_relation": "asserts",
+      "narrative_relation": "complicates",
+      "canonical_themes": [
+        "unrequited-longing",
+        "ephemeral-connection",
+        "isolation"
+      ],
+      "local_motifs": [
+        "charming and dark",
+        "trembling with excitement",
+        "glimmer of a smile"
+      ]
+    }
+  }
+]

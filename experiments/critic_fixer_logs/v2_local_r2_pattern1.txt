@@ -1,0 +1,16 @@
+PATTERN: Misclassification of "explores" as "asserts"
+
+AFFECTED: 6 chunks
+
+FAILURE MECHANISM: The system is incorrectly labeling passages as "asserts" when they should be classified as "explores." This occurs when the content involves hypothetical, imaginative, or conjectural scenarios, which should be classified as "explores" rather than "asserts."
+
+PROMPT LANGUAGE:
+- "Most dialogue in which a speaker states a feeling with conviction is 'asserts'."
+- "Do NOT judge this field from the passage's SUBJECT MATTER. A passage about fantasy, dreaming, or imagination is not automatically 'explores' — if the speaker states it as settled fact, with conviction, in a confident narrating or lecturing voice ('let me tell you...', 'he is...', 'I am a type!'), that is still 'asserts', even though the content itself concerns dreams or fantasy."
+
+WHY THIS CAUSES THE FAILURE: The current prompt language emphasizes conviction and confidence in delivery as indicators of "asserts," which may lead to misclassification when the content is inherently exploratory, such as when discussing dreams or hypothetical scenarios. The distinction between conviction in delivery and the exploratory nature of the content is not sufficiently clear.
+
+PROPOSED FIX: Clarify that "explores" should be used for passages where the content is hypothetical, imaginative, or conjectural, even if delivered with confidence. Emphasize that the nature of the content, rather than the tone of delivery, should guide the classification.
+
+DRAFT INSTRUCTION:
+"Most dialogue in which a speaker states a feeling with conviction is 'asserts'. However, if the content is hypothetical, imaginative, or conjectural, classify it as 'explores' regardless of the confidence in delivery. Focus on the nature of the content to determine if it is exploratory, rather than the tone of delivery."

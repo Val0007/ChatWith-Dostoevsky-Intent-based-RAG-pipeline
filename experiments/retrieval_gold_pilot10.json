@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q01",
+    "night": "First Night",
+    "intent": "factual",
+    "question": "How does the narrator first meet Nastenka?",
+    "expected_answer": "Walking home late one night, he sees a girl crying alone by the canal. A drunken gentleman starts pursuing her; the narrator drives him off with his walking stick, then offers her his arm, and the two fall into conversation as he sees her home.",
+    "gold_evidence": ["white_nights_first_night_009", "white_nights_first_night_010"]
+  },
+  {
+    "id": "q02",
+    "night": "First Night",
+    "intent": "character",
+    "question": "How does the narrator describe his own life in Petersburg before meeting Nastenka?",
+    "expected_answer": "He says he has lived in Petersburg eight years without making one real acquaintance. He is so starved for connection that he has formed one-sided attachments to the houses on his streets and to an old man he passes on his walks, and he is thrown into anxious loneliness each summer when the city empties out and even those imagined \"friends\" disappear.",
+    "gold_evidence": ["white_nights_first_night_001"]
+  },
+  {
+    "id": "q03",
+    "night": "First Night",
+    "intent": "motivation",
+    "question": "Why does Nastenka make the narrator promise not to fall in love with her before agreeing to meet again?",
+    "expected_answer": "She wants a friend and confidant, not a suitor. She tells him she has no one else to talk to or ask advice from, and is explicit that friendship, not romance, is the only thing on offer.",
+    "gold_evidence": ["white_nights_first_night_016"]
+  },
+  {
+    "id": "q04",
+    "night": "Second Night",
+    "intent": "factual",
+    "question": "What was Nastenka's living situation with her grandmother, and what promise did the lodger make before leaving for Moscow?",
+    "expected_answer": "Nastenka's blind grandmother literally pinned Nastenka's dress to her own so she could not leave her side, keeping her under constant, strict supervision. The lodger, whom Nastenka fell for, refused to promise marriage outright before leaving for a year in Moscow — he said he had nothing to marry on yet, and only promised that if she still loved him, and he had not found someone he preferred, they would \"certainly\" be happy — carefully avoiding any binding commitment.",
+    "gold_evidence": ["white_nights_second_night_023", "white_nights_second_night_032"]
+  },
+  {
+    "id": "q05",
+    "night": "Second Night",
+    "intent": "interpretive",
+    "question": "When the narrator rhapsodizes that \"the dreamer\" desires nothing because he is \"superior to all desire\" and lives entirely in fantasy, does the book present this as genuine wisdom, or does it undercut the claim?",
+    "expected_answer": "It undercuts the claim. The speech itself frames the dreamer's contentment as a \"delusion of the imagination\" that he only manages to believe is real at certain moments, and the story's own ending — his heartbreak once he risks a real connection — shows this self-sufficiency is a defense against life rather than a superior state. The rapture is being portrayed as self-deception, not endorsed as wisdom.",
+    "gold_evidence": ["white_nights_second_night_013"]
+  },
+  {
+    "id": "q06",
+    "night": "Second Night",
+    "intent": "evaluation",
+    "question": "What does the narrator convince Nastenka to do about the lodger's continued silence, and on what grounds does he argue for it?",
+    "expected_answer": "He urges her to write the lodger a letter herself rather than wait passively, arguing that because the lodger made her a promise, she has the right to remind him of it and take the first step — it isn't improper given their history.",
+    "gold_evidence": ["white_nights_second_night_034"]
+  },
+  {
+    "id": "q07",
+    "night": "Third Night",
+    "intent": "comparative",
+    "question": "How does Nastenka compare her feelings for the lodger with her feelings for the narrator?",
+    "expected_answer": "She says she loves the lodger more, but respects and half-fears him because he is grave and proud, whereas she is at ease enough with the narrator to say anything to him. The narrator points out that this very ease is proof her love for the lodger outweighs even her feeling for herself — not evidence the lodger is the lesser man.",
+    "gold_evidence": ["white_nights_third_night_008"]
+  },
+  {
+    "id": "q08",
+    "night": "Fourth Night",
+    "intent": "evaluation",
+    "question": "When the narrator declares \"now I am happy\" after Nastenka seems to turn to him, is that happiness presented as secure, or does the narrative signal it won't last?",
+    "expected_answer": "The narrative signals it is precarious even as he says it. The joy exists only because the lodger has apparently failed to appear, and the scene sits right before Nastenka's reunion with the lodger on the embankment undoes it — the declaration reads as premature, not a settled outcome.",
+    "gold_evidence": ["white_nights_fourth_night_012"]
+  },
+  {
+    "id": "q09",
+    "night": "Fourth Night",
+    "intent": "comparative",
+    "question": "How does the narrator's brief real happiness with Nastenka in the Fourth Night differ from the solitary fantasy life he described on the Second Night?",
+    "expected_answer": "On the Second Night his happiness was entirely self-manufactured — a private theater of imagined loves and adventures that costs him nothing and involves no other person. On the Fourth Night, for the first time, his joy depends on someone real reciprocating, which is exactly why it is fragile: a fantasy cannot be taken from him, but a real Nastenka can walk away — and does.",
+    "gold_evidence": ["white_nights_second_night_013", "white_nights_fourth_night_012"]
+  },
+  {
+    "id": "q10",
+    "night": "Morning",
+    "intent": "development",
+    "question": "How does the story resolve for the narrator and Nastenka, and how does he respond to her final letter?",
+    "expected_answer": "Nastenka's former lover returns after all; she runs to him on the embankment and leaves with him. The next day she sends the narrator a letter announcing she is to marry the lodger, asking his forgiveness and hoping to remain friends. The narrator is devastated but does not resent her — he blesses her happiness and closes by asking whether a whole moment of happiness isn't enough for an entire lifetime, treating the one moment of love he received from her as sufficient despite everything.",
+    "gold_evidence": ["white_nights_morning_002", "white_nights_morning_004"]
+  }
+]

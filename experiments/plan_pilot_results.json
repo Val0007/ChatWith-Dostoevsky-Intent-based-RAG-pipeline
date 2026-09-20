@@ -1,0 +1,299 @@
+{
+  "k": 6,
+  "questions": [
+    {
+      "id": "q01",
+      "night": "First Night",
+      "intent": "factual",
+      "diagnosis": {
+        "intent": "find_specific_narrative_event",
+        "evidence_requirement": "description of the first meeting between the narrator and Nastenka",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": false,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "narrative"
+        ]
+      },
+      "retrieved": [
+        "white_nights_second_night_037",
+        "white_nights_second_night_006",
+        "white_nights_third_night_004",
+        "white_nights_second_night_034",
+        "white_nights_third_night_002",
+        "white_nights_second_night_005"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q02",
+      "night": "First Night",
+      "intent": "character",
+      "diagnosis": {
+        "intent": "find_specific_narrative_event",
+        "evidence_requirement": "descriptions of the narrator's life in Petersburg before meeting Nastenka",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank"
+        ]
+      },
+      "retrieved": [
+        "white_nights_second_night_018",
+        "white_nights_second_night_019",
+        "white_nights_second_night_012",
+        "white_nights_first_night_007",
+        "white_nights_second_night_005",
+        "white_nights_third_night_005"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q03",
+      "night": "First Night",
+      "intent": "motivation",
+      "diagnosis": {
+        "intent": "character_motivation",
+        "evidence_requirement": "explanation of Nastenka's request and its implications",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank"
+        ]
+      },
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_first_night_016",
+        "white_nights_first_night_012",
+        "white_nights_third_night_004",
+        "white_nights_third_night_009",
+        "white_nights_fourth_night_014"
+      ],
+      "hit": true,
+      "rank": 2
+    },
+    {
+      "id": "q04",
+      "night": "Second Night",
+      "intent": "factual",
+      "diagnosis": {
+        "intent": "find_specific_narrative_event",
+        "evidence_requirement": "details about Nastenka's living situation and the lodger's promise",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "metadata_filter",
+          "bm25",
+          "rerank"
+        ]
+      },
+      "retrieved": [
+        "white_nights_second_night_033",
+        "white_nights_second_night_035",
+        "white_nights_second_night_025",
+        "white_nights_second_night_031",
+        "white_nights_second_night_026",
+        "white_nights_second_night_034"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q05",
+      "night": "Second Night",
+      "intent": "interpretive",
+      "diagnosis": {
+        "intent": "thematic_interpretation",
+        "evidence_requirement": "textual evidence on the narrator's perspective on desire and fantasy",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank",
+          "narrative"
+        ]
+      },
+      "retrieved": [
+        "white_nights_second_night_014",
+        "white_nights_second_night_019",
+        "white_nights_second_night_020",
+        "white_nights_second_night_005",
+        "white_nights_second_night_012",
+        "white_nights_second_night_004"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q06",
+      "night": "Second Night",
+      "intent": "evaluation",
+      "diagnosis": {
+        "intent": "find_specific_narrative_event",
+        "evidence_requirement": "specific actions and arguments made by the narrator regarding the lodger's silence",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank"
+        ]
+      },
+      "retrieved": [
+        "white_nights_third_night_007",
+        "white_nights_fourth_night_002",
+        "white_nights_second_night_034",
+        "white_nights_second_night_005",
+        "white_nights_second_night_032",
+        "white_nights_second_night_033"
+      ],
+      "hit": true,
+      "rank": 3
+    },
+    {
+      "id": "q07",
+      "night": "Third Night",
+      "intent": "comparative",
+      "diagnosis": {
+        "intent": "comparison",
+        "evidence_requirement": "passages illustrating Nastenka's feelings for both characters",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "metadata_filter",
+          "bm25",
+          "rerank"
+        ]
+      },
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_fourth_night_008",
+        "white_nights_third_night_008",
+        "white_nights_fourth_night_002",
+        "white_nights_third_night_009",
+        "white_nights_fourth_night_009"
+      ],
+      "hit": true,
+      "rank": 3
+    },
+    {
+      "id": "q08",
+      "night": "Fourth Night",
+      "intent": "evaluation",
+      "diagnosis": {
+        "intent": "thematic_interpretation",
+        "evidence_requirement": "analysis of the narrator's declaration of happiness and its context",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank",
+          "narrative"
+        ]
+      },
+      "retrieved": [
+        "white_nights_third_night_002",
+        "white_nights_second_night_018",
+        "white_nights_third_night_009",
+        "white_nights_morning_004",
+        "white_nights_second_night_017",
+        "white_nights_fourth_night_014"
+      ],
+      "hit": false,
+      "rank": null
+    },
+    {
+      "id": "q09",
+      "night": "Fourth Night",
+      "intent": "comparative",
+      "diagnosis": {
+        "intent": "comparison",
+        "evidence_requirement": "passages illustrating the narrator's happiness with Nastenka and his solitary fantasy life",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "metadata_filter",
+          "bm25",
+          "rerank",
+          "narrative"
+        ]
+      },
+      "retrieved": [
+        "white_nights_second_night_018",
+        "white_nights_second_night_015",
+        "white_nights_second_night_019",
+        "white_nights_second_night_020",
+        "white_nights_third_night_009",
+        "white_nights_second_night_013"
+      ],
+      "hit": true,
+      "rank": 6
+    },
+    {
+      "id": "q10",
+      "night": "Morning",
+      "intent": "development",
+      "diagnosis": {
+        "intent": "story_development",
+        "evidence_requirement": "passages detailing the resolution of the narrator and Nastenka's relationship and his response to her letter",
+        "lexical_overlap_expected": "medium",
+        "semantic_similarity_expected": "high",
+        "metadata_usefulness": "high",
+        "needs_multi_hop": false,
+        "needs_reranking": true,
+        "recommended_plan": [
+          "bm25",
+          "metadata_filter",
+          "rerank",
+          "narrative"
+        ]
+      },
+      "retrieved": [
+        "white_nights_fourth_night_001",
+        "white_nights_second_night_033",
+        "white_nights_second_night_035",
+        "white_nights_fourth_night_002",
+        "white_nights_second_night_036",
+        "white_nights_third_night_004"
+      ],
+      "hit": false,
+      "rank": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+PATTERN: Misclassification of "explores" as "asserts"
+
+AFFECTED: 8 chunks
+
+FAILURE MECHANISM: The model is incorrectly classifying passages that should be labeled as "explores" as "asserts." This occurs when the Dreamer is engaging in hypothetical or imaginative scenarios, or when there is a sense of wondering or conjecture, but the model interprets these as statements of fact or conviction.
+
+PROMPT LANGUAGE: "Most dialogue in which a speaker states a feeling with conviction is 'asserts'."
+
+WHY THIS CAUSES THE FAILURE: The prompt may be overemphasizing the conviction aspect of "asserts" without adequately distinguishing between conviction in real scenarios and conviction in hypothetical or imaginative scenarios. This can lead to misclassification when the Dreamer is exploring ideas or possibilities rather than stating facts.
+
+PROPOSED FIX: Clarify the distinction between "asserts" and "explores" by emphasizing that "explores" involves hypothetical, imaginative, or conjectural content, even if delivered with rhetorical confidence. Ensure that the model recognizes that confident delivery of a fantasy or hypothetical scenario is still exploring, not asserting.
+
+DRAFT INSTRUCTION: "Most dialogue in which a speaker states a feeling with conviction is 'asserts'. However, if the content is hypothetical, imaginative, or conjectural, it should be classified as 'explores', even if delivered with rhetorical confidence. Confident delivery of a fantasy or hypothetical scenario is exploring the fantasy, not asserting a fact."
+
+PATTERN: Misclassification of "doubts" as "explores"
+
+AFFECTED: 1 chunk
+
+FAILURE MECHANISM: The model is incorrectly classifying a passage that should be labeled as "doubts" as "explores." This occurs when the speaker is expressing uncertainty or anxiety about a real situation, but the model interprets it as hypothetical exploration.
+
+PROMPT LANGUAGE: "explores - turns it over, imagines, wonders, without committing"
+
+WHY THIS CAUSES THE FAILURE: The prompt may not be sufficiently distinguishing between genuine wondering about hypothetical scenarios and anxious questioning about real situations. This can lead to misclassification when the speaker is expressing doubt or uncertainty about something they need to be true.
+
+PROPOSED FIX: Emphasize the distinction between "explores" and "doubts" by highlighting that "doubts" involves uncertainty or anxiety about real situations, whereas "explores" involves hypothetical or imaginative scenarios without a stake in the outcome.
+
+DRAFT INSTRUCTION: "explores - turns it over, imagines, wonders, without committing. Use 'doubts' when the speaker is expressing uncertainty or anxiety about a real situation, not when they are imagining a hypothetical scenario without a stake in the outcome."
+
+PATTERN: Misclassification of "the Dreamer and Nastenka" as "Nastenka" or "the Dreamer"
+
+AFFECTED: 3 chunks
+
+FAILURE MECHANISM: The model is incorrectly classifying passages where both the Dreamer and Nastenka are speaking as having only one speaker. This occurs when there is a substantive exchange between the two, but the model attributes the speaking voice to only one of them.
+
+PROMPT LANGUAGE: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field."
+
+WHY THIS CAUSES THE FAILURE: The prompt may not be sufficiently emphasizing the need to identify even brief substantive exchanges as qualifying for dual attribution. This can lead to misclassification when the model overlooks short but meaningful contributions from both speakers.
+
+PROPOSED FIX: Reinforce the importance of identifying substantive exchanges between the Dreamer and Nastenka, regardless of length, as qualifying for dual attribution. Emphasize that even brief but meaningful contributions from both speakers should be recognized.
+
+DRAFT INSTRUCTION: "Ensure that even brief but substantive exchanges between the Dreamer and Nastenka are recognized as qualifying for 'the Dreamer and Nastenka' in the speaking_voice field. Look for any real line from both speakers, regardless of length, to determine dual attribution."

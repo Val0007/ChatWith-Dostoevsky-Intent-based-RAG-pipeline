@@ -1,0 +1,391 @@
+<!-- White Nights RAG Lab — V2 research plan -->
+<title>White Nights RAG Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #F4F5F8;
+    --surface: #FFFFFF;
+    --surface-2: #FAFBFD;
+    --ink: #14161F;
+    --muted: #565C6C;
+    --faint: #878D9C;
+    --hair: #E4E6EE;
+    --amber: #A9761A;
+    --amber-line: #C89A3C;
+    --amber-soft: #F5EBD3;
+    --steel: #37536B;
+    --steel-soft: #E6ECF2;
+    --shadow: 0 1px 2px rgba(20,22,31,.04), 0 8px 28px rgba(20,22,31,.05);
+    --measure: 68ch;
+    --page: 940px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0D1018;
+      --surface: #151925;
+      --surface-2: #1A1F2D;
+      --ink: #E9EBF2;
+      --muted: #9EA4B5;
+      --faint: #6B7285;
+      --hair: #272D3C;
+      --amber: #E2AE4E;
+      --amber-line: #B98C34;
+      --amber-soft: #2A2416;
+      --steel: #86A6C6;
+      --steel-soft: #1A2534;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0D1018;
+    --surface: #151925;
+    --surface-2: #1A1F2D;
+    --ink: #E9EBF2;
+    --muted: #9EA4B5;
+    --faint: #6B7285;
+    --hair: #272D3C;
+    --amber: #E2AE4E;
+    --amber-line: #B98C34;
+    --amber-soft: #2A2416;
+    --steel: #86A6C6;
+    --steel-soft: #1A2534;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--page); margin: 0 auto; padding: clamp(2rem, 5vw, 4.5rem) clamp(1.1rem, 4vw, 2.4rem) 5rem; }
+  .prose { max-width: var(--measure); }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: .72rem; font-weight: 500;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--amber);
+  }
+  h1 {
+    font-family: "Spectral", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.3rem, 6vw, 3.4rem);
+    line-height: 1.04; letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: .5rem 0 .1rem;
+  }
+  .thesis {
+    font-family: "Spectral", Georgia, serif;
+    font-size: clamp(1.15rem, 2.4vw, 1.4rem);
+    font-style: italic; font-weight: 400;
+    color: var(--muted); max-width: 40ch; line-height: 1.4;
+    margin: .9rem 0 0;
+  }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: .5rem .9rem;
+    font-family: "IBM Plex Mono", monospace; font-size: .74rem;
+    color: var(--faint); margin-top: 1.6rem;
+  }
+  .meta span { white-space: nowrap; }
+  .meta .dot { color: var(--amber-line); }
+
+  header { border-bottom: 1px solid var(--hair); padding-bottom: 2rem; margin-bottom: 2.8rem; }
+
+  section { margin-top: 3.2rem; }
+  h2 {
+    font-family: "Spectral", Georgia, serif;
+    font-weight: 600; font-size: clamp(1.4rem, 3vw, 1.75rem);
+    letter-spacing: -.01em; text-wrap: balance;
+    margin: 0 0 .2rem;
+    display: flex; align-items: baseline; gap: .7rem;
+  }
+  h2 .num {
+    font-family: "IBM Plex Mono", monospace; font-size: .8rem; font-weight: 500;
+    color: var(--amber); letter-spacing: .05em;
+  }
+  .lede { color: var(--muted); margin: .35rem 0 1.4rem; max-width: var(--measure); }
+  p { margin: 0 0 1rem; }
+  strong { font-weight: 600; }
+  a { color: var(--amber); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+
+  /* method ladder */
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -2px; }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+  .scroll table { min-width: 640px; }
+  th, td { text-align: left; padding: .68rem .8rem; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  thead th {
+    font-family: "IBM Plex Mono", monospace; font-size: .68rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .11em; color: var(--faint);
+    border-bottom: 1px solid var(--hair);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  .mno { font-family: "IBM Plex Mono", monospace; color: var(--amber); font-weight: 500; white-space: nowrap; }
+  .method { font-weight: 600; white-space: nowrap; }
+  td.dim { color: var(--muted); }
+  .best { color: var(--steel); font-weight: 600; font-family: "IBM Plex Mono", monospace; font-size: .86rem; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--hair);
+    border-radius: 12px; box-shadow: var(--shadow);
+    padding: 1.1rem 1.25rem; overflow: hidden;
+  }
+
+  /* phases */
+  .phase { display: grid; grid-template-columns: 3.2rem 1fr; gap: 0 1.1rem; padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .phase:last-child { border-bottom: none; }
+  .phase .pn {
+    font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 1rem;
+    color: var(--amber);
+    border-right: 2px solid var(--amber-line); padding-right: .9rem; line-height: 1.5;
+  }
+  .phase h3 { margin: 0 0 .15rem; font-size: 1.12rem; font-weight: 600; letter-spacing: -.01em; }
+  .phase .role { font-family: "IBM Plex Mono", monospace; font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--faint); margin-bottom: .5rem; }
+  .phase ul { margin: .3rem 0 .7rem; padding-left: 1.05rem; color: var(--muted); }
+  .phase li { margin: .22rem 0; }
+  .gate {
+    display: inline-flex; align-items: baseline; gap: .5rem;
+    font-size: .86rem; background: var(--amber-soft); color: var(--ink);
+    border-radius: 7px; padding: .4rem .7rem; margin-top: .2rem;
+  }
+  .gate b { font-family: "IBM Plex Mono", monospace; font-size: .64rem; text-transform: uppercase; letter-spacing: .09em; color: var(--amber); }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.2rem; }
+  .two h3 { font-size: 1rem; margin: 0 0 .35rem; display: flex; align-items: center; gap: .5rem; }
+  .two .tag { font-family: "IBM Plex Mono", monospace; font-size: .6rem; text-transform: uppercase; letter-spacing: .1em; padding: .12rem .4rem; border-radius: 5px; background: var(--steel-soft); color: var(--steel); }
+  .two p { font-size: .92rem; color: var(--muted); margin: 0; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: .2rem 0 0; }
+  .chip { font-family: "IBM Plex Mono", monospace; font-size: .74rem; padding: .28rem .6rem; border: 1px solid var(--hair); border-radius: 999px; color: var(--muted); background: var(--surface-2); }
+  .chip.on { border-color: var(--amber-line); color: var(--amber); background: var(--amber-soft); }
+
+  .risk { display: grid; gap: .9rem; margin-top: 1.2rem; }
+  .risk .card { display: grid; grid-template-columns: auto 1fr; gap: .1rem 1rem; align-items: start; }
+  .risk .r-h { font-weight: 600; }
+  .risk .r-tag { grid-row: span 2; font-family: "IBM Plex Mono", monospace; font-size: .66rem; text-transform: uppercase; letter-spacing: .09em; color: var(--amber); border-right: 2px solid var(--amber-line); padding-right: 1rem; align-self: stretch; display: flex; align-items: center; }
+  .risk .r-b { color: var(--muted); font-size: .92rem; }
+
+  .metrics { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
+  .metrics .m { font-family: "IBM Plex Mono", monospace; font-size: .78rem; padding: .3rem .6rem; border-radius: 7px; background: var(--surface-2); border: 1px solid var(--hair); color: var(--ink); }
+
+  .foot { margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid var(--hair); color: var(--faint); font-family: "IBM Plex Mono", monospace; font-size: .74rem; }
+
+  @media (max-width: 620px) {
+    .two { grid-template-columns: 1fr; }
+    .phase { grid-template-columns: 1fr; gap: .3rem; }
+    .phase .pn { border-right: none; border-bottom: 2px solid var(--amber-line); padding: 0 0 .3rem; width: 2.2rem; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">V2 · Research Plan</div>
+    <h1>White Nights RAG Lab</h1>
+    <p class="thesis">Build intent- and narrative-aware evidence retrieval for literary QA — then prove it works through controlled ablations.</p>
+    <div class="meta">
+      <span>Corpus — <em>White Nights</em>, Dostoevsky</span><span class="dot">·</span>
+      <span>Method — ablation A→F</span><span class="dot">·</span>
+      <span>Builds on the V1 pipeline</span>
+    </div>
+  </header>
+
+  <section class="prose" style="margin-top:0">
+    <h2>What we are actually proving</h2>
+    <p class="lede">Not “our RAG is better.” The claim is <em>conditional</em>, and that is what makes it research.</p>
+    <p>Semantic retrieval is likely <strong>sufficient for straightforward factual questions</strong>. The sophisticated machinery — intent extraction, stance metadata, evidence judging, narrative diversification — should pay off most on <strong>interpretive, motivational, comparative, and character-development</strong> questions. The deliverable is a <em>map</em> of which method earns its cost for which kind of question, plus a failure taxonomy that explains why.</p>
+  </section>
+
+  <section>
+    <h2>Two deliverables, one engine</h2>
+    <div class="two">
+      <div class="card">
+        <h3>The Lab <span class="tag">qualitative</span></h3>
+        <p>An interactive page: one question, seven method buttons, side-by-side answers and evidence. For intuition and demos — you <em>feel</em> the difference. Anecdotal by design.</p>
+      </div>
+      <div class="card">
+        <h3>The Study <span class="tag">quantitative</span></h3>
+        <p>Gold-annotated questions, fixed metrics, N runs with confidence intervals. This produces the defensible numbers behind the finding.</p>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:1.1rem">Both call the same configurable retrieval engine — the Lab renders it, the Study scores it.</p>
+  </section>
+
+  <section>
+    <h2>The retrieval ladder</h2>
+    <p class="lede">Seven named configs — each one adds a single mechanism, so the ablation isolates its effect. These are the Lab's buttons and the Study's rows.</p>
+    <div class="scroll card" style="padding:.4rem .3rem">
+      <table>
+        <thead><tr><th>#</th><th>Method</th><th>What it adds</th><th>Failure it fixes</th></tr></thead>
+        <tbody>
+          <tr><td class="mno">①</td><td class="method">Dense</td><td class="dim">vector search only</td><td class="dim">— baseline</td></tr>
+          <tr><td class="mno">②</td><td class="method">BM25</td><td class="dim">keyword search only</td><td class="dim">exact terms &amp; names</td></tr>
+          <tr><td class="mno">③</td><td class="method">Hybrid</td><td class="dim">vector ∪ BM25, RRF fusion</td><td class="dim">recall</td></tr>
+          <tr><td class="mno">④</td><td class="method">Metadata</td><td class="dim">tag filters &amp; boosts</td><td class="dim">intent mismatch</td></tr>
+          <tr><td class="mno">⑤</td><td class="method">LLM Judge</td><td class="dim">“evidence for <em>this</em> question?”</td><td class="dim">semantic false positives</td></tr>
+          <tr><td class="mno">⑥</td><td class="method">Narrative-Aware</td><td class="dim">diversify + stance + entity balance</td><td class="dim">clumping &amp; missing stance</td></tr>
+          <tr><td class="mno">⑦</td><td class="method">Full V2</td><td class="dim">+ intent + context expansion</td><td class="dim">lost surrounding context</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>The plan, step by step</h2>
+    <p class="lede">Eval-first: the measurement harness and the lab shell come early, so every added method is judged by a number the moment it lands — the same discipline that ran V1, made rigorous.</p>
+
+    <div class="phase">
+      <div class="pn">00</div>
+      <div>
+        <div class="role">Foundation</div>
+        <h3>Make retrieval configurable</h3>
+        <ul>
+          <li>Refactor the pipeline into one <code>retrieve(question, config)</code> with independent toggles for each mechanism.</li>
+          <li>Define the seven named configs above as presets.</li>
+        </ul>
+        <div class="chips">
+          <span class="chip on">dense</span><span class="chip">bm25</span><span class="chip">metadata</span><span class="chip">judge</span><span class="chip">diversify</span><span class="chip">expand</span><span class="chip">intent</span>
+        </div>
+        <div class="gate" style="margin-top:.8rem"><b>done when</b> all 7 configs run the same question and return passages.</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pn">01</div>
+      <div>
+        <div class="role">New capability</div>
+        <h3>Query intent</h3>
+        <ul>
+          <li>Fix an intent taxonomy: factual · character · motivation · evaluation · interpretive · comparative · development.</li>
+          <li>Extractor: question → <code>{ intent, entity, evidence_type }</code>.</li>
+          <li>Wire intent into retrieval — metadata boosts, entity-balancing for comparatives, evidence-type matching.</li>
+        </ul>
+        <div class="gate"><b>done when</b> “What does Nastenka want?” → <code>{desire, Nastenka, dialogue/action}</code>, and intent-classification accuracy is measured.</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pn">02</div>
+      <div>
+        <div class="role">Eval-first</div>
+        <h3>Harness + gold pilot</h3>
+        <ul>
+          <li>Pilot 30 questions across the 7 types; pressure-test the scheme before scaling.</li>
+          <li>Annotate gold evidence per question — LLM-proposed, <strong>human-adjudicated</strong> (never circular); ≥2 annotators on a subset, report κ.</li>
+          <li>Metrics module + confound controls: a <strong>closed-book row 0</strong>, fixed answering model, fixed seeds/temp, N runs.</li>
+          <li>Make the answerer emit <code>claim → chunk</code> citations, so citation accuracy is measurable.</li>
+        </ul>
+        <div class="gate"><b>done when</b> any config can be scored end-to-end on the pilot set.</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pn">03</div>
+      <div>
+        <div class="role">Experiment</div>
+        <h3>Scale &amp; run the ablation</h3>
+        <ul>
+          <li>Grow the bank to 100–200 questions, balanced across types.</li>
+          <li>Run all 7 configs × all questions; compute every metric with confidence intervals.</li>
+          <li>Assemble the method × question-type table and the failure taxonomy.</li>
+        </ul>
+        <div class="gate"><b>done when</b> the conditional finding table is populated with error bars.</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pn">04</div>
+      <div>
+        <div class="role">Demo</div>
+        <h3>The RAG Lab UI</h3>
+        <ul>
+          <li>Question box + seven method buttons + “run all”.</li>
+          <li>Per method: retrieved passages (tags + provenance surfaced), the answer, and its scores.</li>
+          <li>Side-by-side comparison; a “best method per question-type” summary panel.</li>
+          <li>Delivery: a static, precomputed page to share, or a live server for free exploration.</li>
+        </ul>
+        <div class="gate"><b>done when</b> you pick a question, toggle methods, and see evidence + answer + metrics change.</div>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="pn">05</div>
+      <div>
+        <div class="role">Finding</div>
+        <h3>Write it up</h3>
+        <ul>
+          <li>State the conditional finding, the per-type table, and the failure→fix taxonomy.</li>
+        </ul>
+        <div class="gate"><b>done when</b> the one-paragraph nuanced claim is backed by the numbers.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The finding we expect</h2>
+    <p class="lede">A hypothesis, not a result — this table is what the Study fills in (and may overturn).</p>
+    <div class="scroll card" style="padding:.4rem .3rem">
+      <table>
+        <thead><tr><th>Question type</th><th>Likely best retrieval</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td class="method">Factual</td><td class="best">BM25 / Dense</td><td class="dim">the answer is a named fact in one place</td></tr>
+          <tr><td class="method">Character</td><td class="best">Hybrid + Metadata</td><td class="dim">gather a figure's passages across the book</td></tr>
+          <tr><td class="method">Motivation</td><td class="best">LLM evidence judge</td><td class="dim">“why” needs evidence, not term overlap</td></tr>
+          <tr><td class="method">Evaluation</td><td class="best">Evidence + stance</td><td class="dim">the book's verdict lives in narrative_relation</td></tr>
+          <tr><td class="method">Interpretive</td><td class="best">Narrative-aware</td><td class="dim">meaning is distributed, not local</td></tr>
+          <tr><td class="method">Comparative</td><td class="best">Entity-balanced</td><td class="dim">force coverage of both sides</td></tr>
+          <tr><td class="method">Development</td><td class="best">Cross-scene retrieval</td><td class="dim">change is only visible across scenes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Risks that decide validity</h2>
+    <p class="lede">Three confounds can hollow out the finding. Each has a control built into the plan.</p>
+    <div class="risk">
+      <div class="card">
+        <div class="r-tag">Confound 1</div>
+        <div class="r-h">The model already knows White Nights</div>
+        <div class="r-b">A famous public-domain text — the LLM can answer correctly with <em>zero</em> retrieval, hollowing out “answer correctness.” Control: a closed-book row 0, lean on faithfulness &amp; citation accuracy, consider a less-canonical text as a robustness check.</div>
+      </div>
+      <div class="card">
+        <div class="r-tag">Confound 2</div>
+        <div class="r-h">Gold evidence is subjective</div>
+        <div class="r-b">For interpretive questions the “right” evidence is contestable. Control: ≥2 annotators with reported agreement (κ); LLM may propose, humans adjudicate — never the pipeline's own model grading itself.</div>
+      </div>
+      <div class="card">
+        <div class="r-tag">Confound 3</div>
+        <div class="r-h">The LLM judge is a moving part</div>
+        <div class="r-b">Gains at ⑤ might be “a capable model is now in the loop,” and the judge is nondeterministic. Control: hold the answering model fixed across all rows; fix seeds/temperature; N runs with confidence intervals.</div>
+      </div>
+    </div>
+    <div class="metrics">
+      <span class="m">recall@5/10</span><span class="m">evidence precision</span><span class="m">coverage</span><span class="m">redundancy</span><span class="m">answer correctness</span><span class="m">faithfulness</span><span class="m">citation accuracy</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>The head start</h2>
+    <p class="lede">V1 already implements most of the ladder — V2's genuinely new work is narrow.</p>
+    <div class="two">
+      <div class="card">
+        <h3>Already built <span class="tag">V1</span></h3>
+        <p>Hybrid retrieval · LLM evidence judge · diversity cap · dossier context expansion · stance tags (speaker / narrative_relation / themes) · scene cards + global map · the CLI.</p>
+      </div>
+      <div class="card">
+        <h3>New for V2 <span class="tag">to build</span></h3>
+        <p>Query-intent extraction · the eval harness + gold annotation · the RAG Lab UI · and the experimental rigor that turns the pipeline into a finding.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">White Nights RAG Lab · V2 research plan · parked until the study begins — recommended opener: the eval harness + a 30-question annotated pilot.</div>
+</div>

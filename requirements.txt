@@ -1,0 +1,19 @@
+# Iteration 1 (Stage 0 + Stage 1) dependencies
+openai            # LLM + embeddings API
+chromadb          # vector store
+chonkie           # RecursiveChunker (token-capped, structural splits)
+tiktoken          # token counting for the chunker
+python-dotenv     # load OPENAI_API_KEY from .env
+
+# Stage 4 retrieval
+rank-bm25             # keyword (BM25) retrieval for hybrid search
+# reranker = LLM judge (gpt-4o-mini) via openai for retrieval.py's original pipeline;
+# cheap_rerank (formula, no model call) for production_method.py / union_method.py
+
+# Retrieval V2 experiments (experiments/findings_retrieval.md)
+sentence-transformers  # cross-encoder reranker re-test (src/production_with_encoder.py,
+torch                  # src/production_with_llm_variants.py) -- previously removed after
+                       # V1's cross-encoder was dropped for scoring surface relevance, not
+                       # question intent; re-added to test it on a wider (multi-query-variant)
+                       # candidate pool with the SAME model, since the old verdict was on a
+                       # different (single-query) pool

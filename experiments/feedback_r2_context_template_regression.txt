@@ -1,0 +1,10 @@
+DIAGNOSIS:
+The CONTEXT_USER_TEMPLATE's guidance on using context data for "narrative_relation" is causing confusion. The instruction to "Check the map's important_resolutions and important_open_questions and the following scenes" may lead the model to over-rely on context data, diluting the SYSTEM_PROMPT's emphasis on evaluating the target passage itself. This results in incorrect predictions when the context suggests a different narrative stance than what is evident in the passage.
+
+PATCH:
+target: CONTEXT_USER_TEMPLATE
+old: "Check the map's important_resolutions and important_open_questions and the following scenes."
+new: "Focus on the target passage itself for narrative_relation. Use the map's important_resolutions and important_open_questions only to clarify the passage's context, not to override its evident stance."
+
+REGRESSION RISK:
+This patch could potentially reduce the model's ability to use context data to resolve ambiguous passages, but it should not affect passages where the narrative stance is clear from the text itself.
