@@ -2,7 +2,7 @@
 
 PASS 1-2 (scenes.py): segment scenes, write scene cards, synthesize the global map.
 PASS 3-4 (here): for each chunk, assemble context (global map + adjacent scene cards)
-                 and tag it, then embed and store everything in ./db. Also writes
+                 and tag it, then embed and store everything in data/db. Also writes
                  tags.jsonl for hand spot-checking.
 """
 import json
@@ -18,7 +18,7 @@ from tag_three_pass import tag_three_pass
 
 load_dotenv()
 
-DB_PATH = str(ROOT / "db")
+DB_PATH = str(ROOT / "data" / "db")
 EMBED_MODEL = "text-embedding-3-small"
 COLLECTION = "dostoevsky"
 
@@ -61,7 +61,7 @@ def _scene_context(cards: list[dict], si: int) -> str:
 #                   c["tag_ok"]=True; prints a progress line per chunk. returns None.
 def tag_chunks_with_context(chunks, scenes, cards, global_map) -> None:
     """PASS 3-4: assemble context per chunk and tag it with the locked G three-pass
-    pipeline (see src/tag_three_pass.py, experiments/FINDINGS.md F13) -- one retry, then
+    pipeline (see src/tag_three_pass.py, experiments/tagging/FINDINGS.md F13) -- one retry, then
     fallback."""
     by_id = {c["id"]: c for c in chunks}
     scene_of = {cid: si for si, sc in enumerate(scenes) for cid in sc["chunk_ids"]}
@@ -92,11 +92,11 @@ def main():
     chunks = load_chunks()
     print(f"Total chunks: {len(chunks)}\n")
 
-    # PASS 1-2: evidence store (reuse context/ if already built)
+    # PASS 1-2: evidence store (reuse data/context/ if already built)
     store = load_evidence_store()
     if store:
         scenes, cards, global_map = store
-        print(f"Reusing evidence store: {len(scenes)} scenes from context/")
+        print(f"Reusing evidence store: {len(scenes)} scenes from data/context/")
     else:
         scenes, cards, global_map = build_evidence_store(chunks)
 
@@ -107,7 +107,7 @@ def main():
     print(f"Tagged: {len(chunks) - n_fail}/{len(chunks)} validated, {n_fail} fell back.")
 
     # side-output for spot-checking
-    with open(ROOT / "tags.jsonl", "w", encoding="utf-8") as f:
+    with open(ROOT / "data" / "tags.jsonl", "w", encoding="utf-8") as f:
         for c in chunks:
             f.write(json.dumps({"id": c["id"], "scene_id": c["scene_id"], **c["tags"]},
                                ensure_ascii=False) + "\n")

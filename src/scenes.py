@@ -6,7 +6,7 @@ PASS 2: synthesize all scene cards into one global novel map (arcs/turning point
 
 Scene cards record EVIDENCE only (what happens), never interpretation. The global map
 records the whole-book arc. Together they are the context a later tagger uses to judge
-narrative_relation. Outputs land in context/ as JSON.
+narrative_relation. Outputs land in data/context/ as JSON.
 """
 import json
 from collections import defaultdict
@@ -23,7 +23,7 @@ load_dotenv()
 client = OpenAI()
 
 MODEL = "gpt-4o-mini"
-CONTEXT_DIR = ROOT / "context"
+CONTEXT_DIR = ROOT / "data" / "context"
 
 SEGMENTATION_PROMPT = """You are segmenting Dostoevsky's "White Nights" into coherent narrative scenes.
 
@@ -223,9 +223,9 @@ def build_global_map(cards: list[dict]) -> dict:
     return GlobalMap(**data).model_dump()
 
 
-# example ─ in:  ()   out: (scenes, cards, global_map) read from context/*.json, or None if missing
+# example ─ in:  ()   out: (scenes, cards, global_map) read from data/context/*.json, or None if missing
 def load_evidence_store():
-    """Return (scenes, cards, global_map) from context/ if all three exist, else None."""
+    """Return (scenes, cards, global_map) from data/context/ if all three exist, else None."""
     files = [CONTEXT_DIR / f for f in ("scenes.json", "scene_cards.json", "global_map.json")]
     if not all(f.exists() for f in files):
         return None
@@ -233,10 +233,10 @@ def load_evidence_store():
 
 
 # example ─ in:  the 84 chunks
-#           out: (scenes, cards, global_map)  AND writes context/scenes.json,
+#           out: (scenes, cards, global_map)  AND writes data/context/scenes.json,
 #                scene_cards.json, global_map.json  (runs PASS 1 + PASS 2)
 def build_evidence_store(chunks: list[dict]) -> tuple[list[dict], list[dict], dict]:
-    """Run PASS 1 + PASS 2, save to context/, return (scenes, cards, global_map)."""
+    """Run PASS 1 + PASS 2, save to data/context/, return (scenes, cards, global_map)."""
     CONTEXT_DIR.mkdir(exist_ok=True)
     print("PASS 1a: segmenting scenes...")
     scenes = segment_scenes(chunks)

@@ -10,7 +10,7 @@ import tiktoken
 from chonkie import OverlapRefinery, RecursiveChunker
 
 ROOT = Path(__file__).resolve().parent.parent
-TEXT_PATH = ROOT / "white_nights.txt"
+TEXT_PATH = ROOT / "data" / "white_nights.txt"
 
 CHUNK_SIZE = 350          # tokens
 CHUNK_OVERLAP = 50        # tokens

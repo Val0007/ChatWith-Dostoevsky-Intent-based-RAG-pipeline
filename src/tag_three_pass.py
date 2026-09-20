@@ -15,7 +15,7 @@ cases") making the model over-tag rather than exercise real judgment. Removing t
 removes the reason for the model to relax, and removing pass 3's read/write access to those
 fields makes the whole pipeline's data flow one-directional and each pass's output final.
 
-Per F8 (experiments/FINDINGS.md): narrative_relation is carried by the global map, NOT scenes
+Per F8 (experiments/tagging/FINDINGS.md): narrative_relation is carried by the global map, NOT scenes
 (scenes alone were worse than local); canonical_themes/characters_present are carried by scenes,
 NOT the map; speaker_relation was best under LOCAL alone, every context arm made it worse.
 

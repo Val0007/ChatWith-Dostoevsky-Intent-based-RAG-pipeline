@@ -16,7 +16,7 @@
       v
   cheap reranker                    <- cheap_rerank() : a literal-keyword-precision bonus
       |                                on top of the fused score. NOT an LLM call, on
-      v                                purpose: R1/R2/R3 in findings_retrieval.md all found
+      v                                purpose: R1/R2/R3 in experiments/retrieval/FINDINGS.md all found
     TOP-K                              the LLM judge demotes correct evidence for exactly
       |                                the interpretive/evaluative questions this pipeline
       v                                is supposed to help with.
@@ -26,7 +26,7 @@ Why a separate file rather than another retrieval.py preset: this isn't a fixed 
 on/off toggles like PRESETS, it's a genuinely different retrieval mechanism (continuous
 weighted score fusion instead of rank fusion / a boost / a single LLM pick), driven by a
 classifier with its own tunable parameters (weight tables, regex rules) that get tuned
-through the experiment rounds logged in experiments/findings_retrieval.md (R4).
+through the experiment rounds logged in experiments/retrieval/FINDINGS.md (R4).
 """
 import re
 import sys
@@ -46,7 +46,7 @@ from retrieval import (_bm25, _content_overlap, _diversify, _tok, answer, by_id,
 INTENTS = ["INTERPRETIVE", "COMPARATIVE_MULTI_HOP", "MOTIVATION", "EVENT",
            "CHARACTER_RELATIONSHIP", "TEMPORAL", "LEXICAL_FACT", "GENERAL"]
 
-# Narrowed after round 0 (see experiments/findings_retrieval.md R4): originally "why does"
+# Narrowed after round 0 (see experiments/retrieval/FINDINGS.md R4): originally "why does"
 # lived here too, but that swept in plain character-motivation questions ("why does
 # Nastenka make him promise X") that behave like EVENT (strong lexical overlap with their
 # answer passage) — not like a whole-book judgment question. INTERPRETIVE is now reserved
@@ -121,13 +121,13 @@ def classify_intent(query: str) -> str:
 # ---------------------------------------------------------------- 2. intent -> weights
 # Starting points: the three the user specified (event, lexical, character_relationship),
 # plus a reasoned starting guess for the rest -- ALL tuned against the 10-question gold set
-# across the rounds logged in experiments/findings_retrieval.md R4. This dict IS the tuning
+# across the rounds logged in experiments/retrieval/FINDINGS.md R4. This dict IS the tuning
 # record's final state; experiments/tune_production_weights.py is what produced it.
 WEIGHTS = {
     "EVENT":                  {"bm25": 0.2, "dense": 0.6, "metadata": 0.2},
     "LEXICAL_FACT":           {"bm25": 0.7, "dense": 0.2, "metadata": 0.1},
     "CHARACTER_RELATIONSHIP": {"bm25": 0.2, "dense": 0.4, "metadata": 0.4},
-    # round 1 (findings_retrieval.md R4): q02's gold had strong dense signal (rank 17/84)
+    # round 1 (experiments/retrieval/FINDINGS.md R4): q02's gold had strong dense signal (rank 17/84)
     # but near-zero bm25/metadata — raised dense, cut metadata which was contributing noise.
     "TEMPORAL":               {"bm25": 0.25, "dense": 0.55, "metadata": 0.20},
     "COMPARATIVE_MULTI_HOP":  {"bm25": 0.15, "dense": 0.45, "metadata": 0.40},
@@ -209,7 +209,7 @@ def cheap_rerank(query: str, cand_ids: list, fused: dict, bonus_weight: float = 
     """No LLM call — deterministic. Adds a small bonus for candidates that literally
     contain the question's own content words, on top of the fused score. This exists
     specifically to NOT repeat the LLM-judge demotion bug documented in
-    experiments/findings_retrieval.md R1-C / R2 / R3: a formula can't second-guess itself
+    experiments/retrieval/FINDINGS.md R1-C / R2 / R3: a formula can't second-guess itself
     into preferring a topically-similar-but-wrong passage the way the judge did."""
     scores = rerank_scores(query, cand_ids, fused, bonus_weight)
     return sorted(cand_ids, key=lambda cid: scores[cid], reverse=True)

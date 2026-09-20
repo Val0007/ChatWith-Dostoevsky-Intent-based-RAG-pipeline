@@ -21,7 +21,7 @@ from chunking import ROOT, load_chunks
 
 load_dotenv()
 
-DB_PATH = str(ROOT / "db")
+DB_PATH = str(ROOT / "data" / "db")
 EMBED_MODEL = "text-embedding-3-small"
 CHAT_MODEL = "gpt-4o-mini"
 COLLECTION = "dostoevsky"
@@ -34,10 +34,10 @@ chunks = load_chunks()
 by_id = {c["id"]: c for c in chunks}
 order = [c["id"] for c in chunks]
 
-_scenes = json.loads((ROOT / "context" / "scenes.json").read_text())
-scene_cards = {c["scene_id"]: c for c in json.loads((ROOT / "context" / "scene_cards.json").read_text())}
+_scenes = json.loads((ROOT / "data" / "context" / "scenes.json").read_text())
+scene_cards = {c["scene_id"]: c for c in json.loads((ROOT / "data" / "context" / "scene_cards.json").read_text())}
 chunk_to_scene = {cid: s["scene_id"] for s in _scenes for cid in s["chunk_ids"]}
-tags = {json.loads(l)["id"]: json.loads(l) for l in open(ROOT / "tags.jsonl")}
+tags = {json.loads(l)["id"]: json.loads(l) for l in open(ROOT / "data" / "tags.jsonl")}
 
 _word = re.compile(r"[a-z']+")
 # example ─ in:  "What does Nastenka want?"   out: ["what", "does", "nastenka", "want"]
@@ -87,7 +87,7 @@ _CANDIDATE_FNS = {"dense": _dense_candidates, "bm25": _bm25_candidates, "hybrid"
 
 # ---------- metadata (tag-overlap boost AND filter; the "metadata" toggle / metadata_filter step) ----------
 # Common short words the R1 pilot caught inflating overlap scores for the wrong reason
-# (see experiments/findings_retrieval.md R1-D: "the"/"and"/"for" counted as if they meant
+# (see experiments/retrieval/FINDINGS.md R1-D: "the"/"and"/"for" counted as if they meant
 # something). Stripped from both directions before comparing query tokens to tag tokens.
 _STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "of", "to", "in", "on", "at", "for", "by", "with",

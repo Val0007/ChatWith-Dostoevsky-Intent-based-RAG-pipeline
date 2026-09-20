@@ -160,7 +160,7 @@ Never output the final answer.
 Never output more than one Action at a time."""
 
 
-# (v1/v2/v3 prompt history: see experiments/findings_retrieval.md R20/R21/R22.
+# (v1/v2/v3 prompt history: see experiments/retrieval/FINDINGS.md R20/R21/R22.
 #  v4 = v2 base + 3 surgical rules: immutable first query (Step 1), mandatory
 #  Lookup-before-Search priority (Step 2), anchor+missing-concept recovery
 #  queries instead of a general "useful changes include" list (Step 3).)
